@@ -13,7 +13,7 @@
 *************************************** */
 
 .elgg-icon {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>_graphics/elgg_sprites.png) no-repeat left;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/graphics/elgg_sprites.png) no-repeat left;
 	width: 16px;
 	height: 16px;
 	margin: 0 2px;
@@ -345,4 +345,12 @@
 .elgg-avatar-large > a > img {
 	width: 200px;
 	height: 200px;
+}
+
+.elgg-icon-groups {
+	background-position: 0 -1530px;
+}
+
+.elgg-icon-groups:hover {
+	background-position: 0 -1550px;
 }

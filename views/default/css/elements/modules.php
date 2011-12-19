@@ -30,6 +30,9 @@
 
 /* Popup */
 .elgg-module-popup {
+	position: absolute;
+	width: 150px;
+	
 	background-color: white;
 	border: 1px solid #ccc;
 	
