@@ -25,11 +25,12 @@
 	height: 90px;
 }
 .elgg-page-default .elgg-page-body > .elgg-inner {
-	width: 990px;
+	width: 94%;
 	margin: 0 auto;
+	padding-top: 25px;
 }
 .elgg-page-default .elgg-page-footer > .elgg-inner {
-	width: 990px;
+	width: 94;
 	margin: 0 auto;
 	padding: 5px 0;
 	border-top: 1px solid #DEDEDE;

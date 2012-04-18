@@ -7,7 +7,7 @@ function n1_theme_init() {
 	elgg_register_menu_item('topbar', array(
 		'name' => 'elgg_logo',
 		'text' => elgg_get_site_entity()->name,
-		'href' => elgg_get_site_url,
+		'href' => elgg_get_site_url(),
 		'priority' => 0,
 	));
 	
