@@ -42,8 +42,8 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-	border: solid 1px #4690d6;
-	background: #e4ecf5;
+	border: solid 1px #ff4c12;
+	background: #ffede2;
 	color:#333;
 }
 
@@ -185,7 +185,7 @@ input[type="radio"] {
 	color:white !important;
 }
 .friends-picker-navigation li a.current {
-	background: #4690D6;
+	background: #ff4c12;
 	color:white !important;
 }
 .friends-picker-navigation-l, .friends-picker-navigation-r {
@@ -265,7 +265,7 @@ input[type="radio"] {
 }
 .ui-autocomplete a:hover {
 	text-decoration: none;
-	color: #4690D6;
+	color: #ff4c12;
 }
 
 /* ***************************************
@@ -288,7 +288,7 @@ input[type="radio"] {
 	margin-top: 3px;
 	width: 208px;
 	background-color: white;
-	border: 1px solid #0054A7;
+	border: 1px solid #d86c2c;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -306,10 +306,10 @@ input[type="radio"] {
 
 .ui-datepicker-header {
 	position: relative;
-	background: #4690D6;
+	background: #ff4c12;
 	color: white;
 	padding: 2px 0;
-	border-bottom: 1px solid #0054A7;
+	border-bottom: 1px solid #d86c2c;
 }
 .ui-datepicker-header a {
 	color: white;
@@ -335,7 +335,7 @@ input[type="radio"] {
 	margin: 4px;
 }
 .ui-datepicker th {
-	color: #0054A7;
+	color: #d86c2c;
 	border: none;
     font-weight: bold;
     padding: 5px 6px;
@@ -353,18 +353,18 @@ input[type="radio"] {
 }
 .ui-datepicker-calendar .ui-state-default {
 	border: 1px solid #ccc;
-    color: #4690D6;;
+    color: #ff4c12;
 	background: #fafafa;
 }
 .ui-datepicker-calendar .ui-state-hover {
 	border: 1px solid #aaa;
-    color: #0054A7;
+    color: #d86c2c;
 	background: #eee;
 }
 .ui-datepicker-calendar .ui-state-active,
 .ui-datepicker-calendar .ui-state-active.ui-state-hover {
 	font-weight: bold;
-    border: 1px solid #0054A7;
-    color: #0054A7;
-	background: #E4ECF5;
+    border: 1px solid #d86c2c;
+    color: #d86c2c;
+	background: #ffede2;
 }

@@ -26,12 +26,12 @@
 	border-radius: 4px;
 	
 	padding: 2px 6px;
-	color: #4690d6;
-	border: 1px solid #4690d6;
+	color: #ff4c12;
+	border: 1px solid #ff4c12;
 	font-size: 12px;
 }
 .elgg-pagination a:hover {
-	background: #4690d6;
+	background: #ff4c12;
 	color: white;
 	text-decoration: none;
 }
@@ -74,7 +74,7 @@
 }
 .elgg-tabs a:hover {
 	background: #dedede;
-	color: #4690D6;
+	color: #ff4c12;
 }
 .elgg-tabs .elgg-state-selected {
 	border-color: #ccc;
@@ -108,7 +108,7 @@
 	color: #999;
 }
 .elgg-breadcrumbs > li > a:hover {
-	color: #0054a7;
+	color: #d86c2c;
 	text-decoration: underline;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .elgg-menu-topbar > li > a:hover {
-	color: #4690D6;
+	color: #ff4c12;
 	text-decoration: none;
 }
 
@@ -191,7 +191,7 @@
 }
 
 .elgg-menu-site-default > li > a {
-	color: white;
+	color: #ed9239;
 }
 
 .elgg-menu-site > li > ul {
@@ -205,16 +205,8 @@
 
 .elgg-menu-site-default > .elgg-state-selected > a,
 .elgg-menu-site-default > li:hover > a {
-	background: white;
-	color: #555;
-
-	-webkit-box-shadow: 2px -1px 1px rgba(0, 0, 0, 0.25);
-	-moz-box-shadow: 2px -1px 1px rgba(0, 0, 0, 0.25);
-	box-shadow: 2px -1px 1px rgba(0, 0, 0, 0.25);
-
-	-webkit-border-radius: 4px 4px 0 0;
-	-moz-border-radius: 4px 4px 0 0;
-	border-radius: 4px 4px 0 0;
+	color: white;
+	text-shadow: 0px 0px 4px #FFF;
 }
 
 .elgg-menu-site-more {
@@ -248,7 +240,7 @@
 }
 
 .elgg-menu-site-more > li > a:hover {
-	background: #4690D6;
+	background: #ff4c12;
 	color: white;
 }
 
@@ -310,7 +302,7 @@
 }
 .elgg-menu-filter > li > a:hover {
 	background: #dedede;
-	color: #4690D6;
+	color: #ff4c12;
 }
 .elgg-menu-filter > .elgg-state-selected {
 	border-color: #ccc;
@@ -341,12 +333,12 @@
 	padding: 2px 4px 2px 8px;
 }
 .elgg-menu-page a:hover {
-	background-color: #0054A7;
+	background-color: #d86c2c;
 	color: white;
 	text-decoration: none;
 }
 .elgg-menu-page li.elgg-state-selected > a {
-	background-color: #4690D6;
+	background-color: #ff4c12;
 	color: white;
 }
 .elgg-menu-page .elgg-child-menu {
@@ -483,12 +475,12 @@
 	padding: 2px 4px 2px 8px;
 }
 .elgg-menu-owner-block li a:hover {
-	background-color: #0054A7;
+	background-color: #d86c2c;
 	color: white;
 	text-decoration: none;
 }
 .elgg-menu-owner-block li.elgg-state-selected > a {
-	background-color: #4690D6;
+	background-color: #ff4c12;
 	color: white;
 }
 

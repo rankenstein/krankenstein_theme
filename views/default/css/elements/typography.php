@@ -11,13 +11,13 @@
 	Typography
 *************************************** */
 body {
-	font-size: 80%;
+	font-size: 85%;
 	line-height: 1.4em;
 	font-family: "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
 }
 
 a {
-	color: #4690D6;
+	color: #ff4c12;
 }
 
 a:hover,
@@ -77,11 +77,11 @@ blockquote {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
-	color: #0054A7;
+	color: #333;
 }
 
-h1 { font-size: 1.8em; }
-h2 { font-size: 1.5em; line-height: 1.1em; padding-bottom:5px}
+h1 { font-size: 2em; visibility: hidden;}
+h2 { font-size: 1.8em; line-height: 1.1em; padding-bottom:5px}
 h3 { font-size: 1.2em; }
 h4 { font-size: 1.0em; }
 h5 { font-size: 0.9em; }
@@ -103,7 +103,7 @@ h6 { font-size: 0.8em; }
 	margin-right: 10px;
 }
 .elgg-heading-basic {
-	color: #0054A7;
+	color: #616068;
 	font-size: 1.2em;
 	font-weight: bold;
 }
@@ -126,7 +126,7 @@ h6 { font-size: 0.8em; }
 }
 
 .elgg-loud {
-	color: #0054A7;
+	color: #d86c2c;
 }
 
 /* ***************************************

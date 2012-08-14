@@ -48,7 +48,7 @@
 	margin-bottom: 5px;
 }
 .elgg-module-popup > .elgg-head * {
-	color: #0054A7;
+	color: #d86c2c;
 }
 
 /* Dropdown */
@@ -78,7 +78,7 @@
 
 /* Featured */
 .elgg-module-featured {
-	border: 1px solid #4690D6;
+	border: 1px solid #ff4c12;
 	
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -86,7 +86,7 @@
 }
 .elgg-module-featured > .elgg-head {
 	padding: 5px;
-	background-color: #4690D6;
+	background-color: #ff4c12;
 }
 .elgg-module-featured > .elgg-head * {
 	color: white;

@@ -8,9 +8,9 @@
 
 /* 
  * Colors:
- *  #4690D6 - elgg light blue
- *  #0054A7 - elgg dark blue
- *  #e4ecf5 - elgg very light blue
+ *  #ff4c12 - n-1 light orange
+ *  #d86c2c - n-1 dark orange
+ *  #e4ecf5 - n-1 very light orange
  */
 
 // check if there is a theme overriding the old css view and use it, if it exists
