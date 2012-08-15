@@ -9,7 +9,9 @@ function n1_theme_init() {
 	elgg_register_plugin_hook_handler('register', 'menu:topbar', 'n1_theme_topbar_menu');
 	
 	elgg_register_plugin_hook_handler('index', 'system', 'n1_theme_front_page');
-	elgg_extend_view('css', 'n1_theme/css');
+	
+	elgg_register_simplecache_view('n1_theme/landing');
+	elgg_register_css('n1:landing_page', elgg_get_simplecache_url('css', 'n1_theme/landing'));
 }
 
 function n1_theme_topbar_menu($hook, $type, $returnvalue, $params){

@@ -22,3 +22,11 @@
 	font-size: 1.4em;
 	color: #666;
 }
+
+#login-dropdown {
+	display:none;
+}
+
+.elgg-page-header > .elgg-inner {
+	background-image: none;
+}

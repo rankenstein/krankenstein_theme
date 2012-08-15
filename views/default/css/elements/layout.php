@@ -42,8 +42,7 @@ body {
 
 /***** TOPBAR ******/
 .elgg-page-topbar {
-	background: #333333 url(<?php echo elgg_get_site_url(); ?>_graphics/toptoolbar_background.gif) repeat-x top left;
-	border-bottom: 1px solid #000000;
+	background-color: #27282d;
 	position: relative;
 	height: 24px;
 	z-index: 9000;
@@ -74,6 +73,7 @@ body {
 }
 .elgg-page-header > .elgg-inner {
 	position: relative;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/n1_small.png) no-repeat 650px bottom;
 }
 
 /***** PAGE BODY LAYOUT ******/
