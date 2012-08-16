@@ -275,6 +275,10 @@
 .elgg-icon-video {
 	background-position: 0 -1512px;
 }
+.elgg-icon-logout {
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/_graphics/usernavicons.png) no-repeat left;
+	background-position: 0 0;
+}
 
 
 .elgg-avatar > .elgg-icon-hover-menu {
@@ -307,9 +311,9 @@
 	height: 25px;
 	
 	/* remove the border-radius if you don't want rounded avatars in supported browsers */
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
 	
 	-moz-background-clip:  border;
 	background-clip:  border;
@@ -325,9 +329,9 @@
 	height: 40px;
 	
 	/* remove the border-radius if you don't want rounded avatars in supported browsers */
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 	
 	-moz-background-clip:  border;
 	background-clip:  border;

@@ -175,8 +175,8 @@
 .elgg-river-content {
 	color: #444;
 	background-color: #DDD;
-	border-right: solid px #888;
-	border-bottom: solid px #888;
+	border-right: solid 1px #888;
+	border-bottom: solid 1px #888;
 	font-size: 85%;
 	line-height: 1.5em;
 	margin: 8px 0 5px 0;

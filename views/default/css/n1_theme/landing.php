@@ -23,6 +23,10 @@
 	color: #666;
 }
 
+.elgg-sidebar h3 {
+	font-size: 1.6em;
+}
+
 #login-dropdown {
 	display:none;
 }
