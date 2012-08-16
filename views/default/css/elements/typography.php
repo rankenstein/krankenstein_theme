@@ -10,10 +10,24 @@
 /* ***************************************
 	Typography
 *************************************** */
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: bold;
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Bold.ttf");
+	font-weight: 700;
+}
+
 body {
-	font-size: 85%;
+	font-size: 75%;
 	line-height: 1.4em;
-	font-family: "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, Verdana, sans-serif;
 }
 
 a {
