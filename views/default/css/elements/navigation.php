@@ -49,16 +49,15 @@
 *************************************** */
 .elgg-tabs {
 	margin-bottom: 5px;
-	border-bottom: 2px solid #cccccc;
+	border-bottom: 1px solid #999;
 	display: table;
 	width: 100%;
 }
 .elgg-tabs li {
 	float: left;
-	border: 2px solid #ccc;
+	border: 1px solid transparent;
 	border-bottom: 0;
-	background: #eee;
-	margin: 0 0 0 10px;
+	margin: 0 0 0 5px;
 	
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
@@ -67,23 +66,24 @@
 .elgg-tabs a {
 	text-decoration: none;
 	display: block;
-	padding: 3px 10px 0 10px;
+	padding: 1px 10px 0;
 	text-align: center;
 	height: 21px;
-	color: #999;
+	color: #333;
+	font-weight: bold;
 }
 .elgg-tabs a:hover {
-	background: #dedede;
 	color: #ff4c12;
 }
 .elgg-tabs .elgg-state-selected {
-	border-color: #ccc;
-	background: white;
+	border-color: #999;
+	background: #edecfa;
+	position: relative;
+	top: 1px;
 }
 .elgg-tabs .elgg-state-selected a {
 	position: relative;
-	top: 2px;
-	background: white;
+	top: -1px;
 }
 
 /* ***************************************
@@ -274,44 +274,48 @@
 *************************************** */
 .elgg-menu-filter {
 	margin-bottom: 5px;
-	border-bottom: 2px solid #ccc;
+	border-bottom: 1px solid #999;
 	display: table;
 	width: 100%;
 }
 .elgg-menu-filter > li {
 	float: left;
-	border: 2px solid #ccc;
+	border: 1px solid transparent;
 	border-bottom: 0;
-	background: #eee;
-	margin: 0 0 0 10px;
+	margin: 0 0 0 5px;
 	
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 }
 .elgg-menu-filter > li:hover {
-	background: #dedede;
+	
 }
 .elgg-menu-filter > li > a {
 	text-decoration: none;
 	display: block;
-	padding: 3px 10px 0;
+	padding: 1px 10px 0;
 	text-align: center;
 	height: 21px;
-	color: #999;
+	color: #333;
+	font-weight: bold;
+	
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 }
 .elgg-menu-filter > li > a:hover {
-	background: #dedede;
 	color: #ff4c12;
 }
 .elgg-menu-filter > .elgg-state-selected {
-	border-color: #ccc;
-	background: white;
+	border-color: #999;
+	background: #edecfa;
+	position: relative;
+	top: 1px;
 }
 .elgg-menu-filter > .elgg-state-selected > a {
 	position: relative;
-	top: 2px;
-	background: white;
+	top: -1px;
 }
 
 /* ***************************************
