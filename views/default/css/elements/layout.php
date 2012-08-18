@@ -16,7 +16,7 @@
 *************************************** */
 
 body {
-	background-color: #edecfa;
+	background-color: #eeeeee;
 }
 
 /***** DEFAULT LAYOUT ******/
@@ -42,7 +42,7 @@ body {
 
 /***** TOPBAR ******/
 .elgg-page-topbar {
-	background-color: #27282d;
+	background-color: #333333;
 	position: relative;
 	height: 24px;
 	z-index: 9000;
@@ -69,7 +69,7 @@ body {
 /***** PAGE HEADER ******/
 .elgg-page-header {
 	position: relative;
-	background: #27282d url(<?php echo elgg_get_site_url(); ?>_graphics/header_shadow.png) repeat-x bottom left;
+	background: #333333 url(<?php echo elgg_get_site_url(); ?>_graphics/header_shadow.png) repeat-x bottom left;
 }
 .elgg-page-header > .elgg-inner {
 	position: relative;
