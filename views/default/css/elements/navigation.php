@@ -57,7 +57,7 @@
 	float: left;
 	border: 1px solid transparent;
 	border-bottom: 0;
-	margin: 0 0 0 5px;
+	margin: 0 5px 0 0;
 	
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
@@ -282,7 +282,7 @@
 	float: left;
 	border: 1px solid transparent;
 	border-bottom: 0;
-	margin: 0 0 0 5px;
+	margin: 0 5px 0 0;
 	
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
