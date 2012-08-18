@@ -368,7 +368,10 @@
 	position: absolute;
 	z-index: 10000;
 
-	width: 165px;
+	overflow: hidden;
+
+	min-width: 165px;
+	max-width: 250px;
 	border: solid 1px;
 	border-color: #E5E5E5 #999 #999 #E5E5E5;
 	background-color: #FFF;
@@ -527,4 +530,26 @@
 *************************************** */
 .elgg-menu-extras {
 	margin-bottom: 15px;
+}
+
+/* ***************************************
+	WIDGET MENU
+*************************************** */
+.elgg-menu-widget > li {
+	position: absolute;
+	top: 4px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding: 2px 2px 0 0;
+}
+
+.elgg-menu-widget > .elgg-menu-item-collapse {
+	left: 5px;
+}
+.elgg-menu-widget > .elgg-menu-item-delete {
+	right: 5px;
+}
+.elgg-menu-widget > .elgg-menu-item-settings {
+	right: 25px;
 }
