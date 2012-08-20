@@ -77,7 +77,7 @@
 }
 .elgg-tabs .elgg-state-selected {
 	border-color: #999;
-	background: #edecfa;
+	background: #eeeeee;
 	position: relative;
 	top: 1px;
 }
@@ -309,7 +309,7 @@
 }
 .elgg-menu-filter > .elgg-state-selected {
 	border-color: #999;
-	background: #edecfa;
+	background: #eee;
 	position: relative;
 	top: 1px;
 }
