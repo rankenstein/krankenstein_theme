@@ -137,13 +137,14 @@
 }
 
 .elgg-module-widget {
-	background-color: #dedede;
 	padding: 2px;
 	margin: 0 5px 15px;
 	position: relative;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 }
-.elgg-module-widget:hover {
-	background-color: #ccc;
+.elgg-module-widget:hover > .elgg-head {
+	background-color: #f5f5f5;
 }
 .elgg-module-widget > .elgg-head {
 	background-color: #eeeeee;
@@ -173,7 +174,6 @@ a.elgg-widget-collapsed:before {
 	content: "\25BA";
 }
 .elgg-module-widget > .elgg-body {
-	background-color: white;
 	width: 100%;
 	overflow: hidden;
 	border-top: 2px solid #dedede;

@@ -35,6 +35,7 @@ body {
 	font-size: 80%;
 	line-height: 1.4em;
 	font-family: "Open Sans", Arial, Tahoma, Verdana, sans-serif;
+	color: #333333;
 }
 
 a {
