@@ -24,6 +24,13 @@
 	font-weight: 700;
 }
 
+@font-face {
+	font-family: "Open Sans";
+	font-style: italic;
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Italic.ttf");
+	font-weight: 400;
+}
+
 body {
 	font-size: 80%;
 	line-height: 1.4em;
