@@ -291,7 +291,7 @@
 }
 
 .elgg-ajax-loader {
-	background: white url(<?php echo elgg_get_site_url(); ?>_graphics/ajax_loader_bw.gif) no-repeat center center;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>_graphics/ajax_loader_bw.gif) no-repeat center center;
 	min-height: 31px;
 	min-width: 31px;
 }
@@ -311,9 +311,9 @@
 	height: 25px;
 	
 	/* remove the border-radius if you don't want rounded avatars in supported browsers */
-	-webkit-border-radius: 13px;
-	-moz-border-radius: 13px;
-	border-radius: 13px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	
 	-moz-background-clip:  border;
 	background-clip:  border;
@@ -329,9 +329,9 @@
 	height: 40px;
 	
 	/* remove the border-radius if you don't want rounded avatars in supported browsers */
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	
 	-moz-background-clip:  border;
 	background-clip:  border;
@@ -345,8 +345,16 @@
 .elgg-avatar-medium > a > img {
 	width: 100px;
 	height: 100px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .elgg-avatar-large > a > img {
 	width: 200px;
 	height: 200px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
