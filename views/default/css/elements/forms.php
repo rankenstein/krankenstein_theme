@@ -41,10 +41,16 @@ input, textarea {
 	box-shadow: inset 0 2px 3px #999;
 }
 
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
 	/*border: solid 1px #ff4c12;*/
-	background: #E7F0E1;
+	background: #FFE9B5;
 	color:#333;
+}
+
+input[type=file] {
+	box-shadow: none;
+	background: none;
+	border: none;	
 }
 
 textarea {

@@ -255,8 +255,8 @@
 }
 
 .elgg-menu-site-more > li > a {
-	background-color: white;
-	color: #555;
+	background-color: #333;
+	color: #ed9239;
 
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -268,7 +268,7 @@
 }
 
 .elgg-menu-site-more > li > a:hover {
-	background: #ff4c12;
+	text-shadow: 0px 0px 4px #FFF;
 	color: white;
 }
 

@@ -69,7 +69,7 @@ body {
 /***** PAGE HEADER ******/
 .elgg-page-header {
 	position: relative;
-	background: #333333 url(<?php echo elgg_get_site_url(); ?>_graphics/header_shadow.png) repeat-x bottom left;
+	background: #333333;
 }
 .elgg-page-header > .elgg-inner {
 	position: relative;
