@@ -355,22 +355,22 @@
 .elgg-menu-page a {
 	display: block;
 	
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	
-	background-color: white;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-weight: bold;
+	color: #333;
 	margin: 0 0 3px;
 	padding: 2px 4px 2px 8px;
 }
 .elgg-menu-page a:hover {
-	background-color: #d86c2c;
-	color: white;
+	background-color: #333;
+	color: #aaa;
 	text-decoration: none;
 }
 .elgg-menu-page li.elgg-state-selected > a {
-	background-color: #ff4c12;
-	color: white;
+	background-color: #333;
+	color: #ccc;
 }
 .elgg-menu-page .elgg-child-menu {
 	display: none;
@@ -500,22 +500,21 @@
 .elgg-menu-owner-block li a {
 	display: block;
 	
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	
-	background-color: white;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #333;
 	margin: 3px 0 5px 0;
 	padding: 2px 4px 2px 8px;
 }
 .elgg-menu-owner-block li a:hover {
-	background-color: #d86c2c;
-	color: white;
+	background-color: #333;
+	color: #aaa;
 	text-decoration: none;
 }
 .elgg-menu-owner-block li.elgg-state-selected > a {
-	background-color: #ff4c12;
-	color: white;
+	background-color: #333;
+	color: #ccc;
 }
 
 /* ***************************************
