@@ -168,8 +168,9 @@
 .elgg-river-content {
 	color: #444;
 	background-color: #DDD;
-	border-right: solid 1px #888;
-	border-bottom: solid 1px #888;
+	border-right: solid 1px #BBB;
+	border-bottom: solid 1px #BBB;
+	border-radius: 3px;
 	font-size: 85%;
 	line-height: 1.5em;
 	margin: 8px 0 5px 0;
@@ -205,8 +206,9 @@
 	margin: 0;
 	background-color: #DDD;
 	border-top: none;
-	border-right: solid 1px #888;
-	border-bottom: solid 1px #888;
+	border-right: solid 1px #BBB;
+	border-bottom: solid 1px #BBB;
+	border-radius: 3px;
 }
 .elgg-river-comments li:first-child {
 	-webkit-border-radius: 5px 0 0;
