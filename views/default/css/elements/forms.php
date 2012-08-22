@@ -49,7 +49,8 @@ input[type=text], input[type=password], textarea {
 
 input[type=text]:focus, input[type=password]:focus, textarea:focus {
 	/*border: solid 1px #ff4c12;*/
-	background: #FFE9B5;
+	/*background: #D5E2F7;*/
+	background: white;
 	color:#333;
 }
 
@@ -302,8 +303,8 @@ input[type="radio"] {
 
 	margin-top: 3px;
 	width: 208px;
-	background-color: white;
-	border: 1px solid #d86c2c;
+	background-color: #eee;
+	border: 1px solid #333;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -321,10 +322,9 @@ input[type="radio"] {
 
 .ui-datepicker-header {
 	position: relative;
-	background: #ff4c12;
-	color: white;
+	background: #333;
+	color: #eee;
 	padding: 2px 0;
-	border-bottom: 1px solid #d86c2c;
 }
 .ui-datepicker-header a {
 	color: white;
@@ -350,7 +350,7 @@ input[type="radio"] {
 	margin: 4px;
 }
 .ui-datepicker th {
-	color: #d86c2c;
+	color: #ff4c12;
 	border: none;
 	font-weight: bold;
 	padding: 5px 6px;
@@ -367,19 +367,18 @@ input[type="radio"] {
 	text-decoration: none;
 }
 .ui-datepicker-calendar .ui-state-default {
-	border: 1px solid #ccc;
+	border: 1px solid transparent;
 	color: #ff4c12;
-	background: #fafafa;
+	background: none;
 }
 .ui-datepicker-calendar .ui-state-hover {
 	border: 1px solid #aaa;
-	color: #d86c2c;
 	background: #eee;
 }
 .ui-datepicker-calendar .ui-state-active,
 .ui-datepicker-calendar .ui-state-active.ui-state-hover {
 	font-weight: bold;
-	border: 1px solid #d86c2c;
-	color: #d86c2c;
-	background: #ffede2;
+	border: 1px solid transparent;
+	color: #eee;
+	background: #333;
 }

@@ -207,8 +207,8 @@ a.elgg-button {
 	font-weight:normal;
 	position:relative;
 	margin-left:0;
-	color: white;
-	border:1px solid #d86c2c;
+	color: #333;
+	border:1px solid #333;
 	
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
@@ -229,7 +229,7 @@ a.elgg-button {
 }
 
 .elgg-button-dropdown:hover {
-	color: white;
+	color: #333;
 	background-color: #d86c2c;
 	text-decoration:none;
 }
