@@ -26,18 +26,24 @@ label {
 }
 
 input, textarea {
-	background-color: #f7f7f7;
-	border: 1px solid #ccc;
 	color: #666;
 	font: 120% Arial, Helvetica, sans-serif;
 	padding: 5px;
 	width: 100%;	
+}
+
+input[type=text], input[type=password], textarea {
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
+	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
 	box-shadow: inset 0 2px 3px #999;
 }
 
@@ -47,11 +53,14 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
 	color:#333;
 }
 
-input[type=file] {
-	box-shadow: none;
-	background: none;
+input[type=file], input[type=button], input[type=reset], input[type=submit] {
 	border: none;	
 }
+
+input[type=file] {
+	background: none;
+}
+
 
 textarea {
 	height: 200px;
@@ -244,6 +253,8 @@ input[type="radio"] {
 *************************************** */
 <?php //autocomplete will expand to fullscreen without max-width ?>
 .ui-autocomplete {
+	font-size: 90%;
+	font-weight: bold;
 	position: absolute;
 	cursor: default;
 }
@@ -251,7 +262,7 @@ input[type="radio"] {
 	max-width: 600px;
 }
 .ui-autocomplete {
-	background-color: white;
+	background-color: #333	;
 	border: 1px solid #ccc;
 	overflow: hidden;
 
@@ -266,12 +277,10 @@ input[type="radio"] {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-.ui-autocomplete .ui-menu-item:hover {
-	background-color: #eee;
-}
-.ui-autocomplete a:hover {
+.ui-autocomplete .ui-menu-item:hover a {
 	text-decoration: none;
-	color: #ff4c12;
+	color: white;
+	text-shadow: 0 0 6px white;
 }
 
 /* ***************************************

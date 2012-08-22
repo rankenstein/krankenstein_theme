@@ -56,7 +56,6 @@ a.elgg-button {
 .elgg-button-submit {
 	color: #bbb;
 	text-shadow: 0 -1px 0px #000;
-
 	
 	background: #45484d; /* Old browsers */
 	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
@@ -65,6 +64,7 @@ a.elgg-button {
 	background: -o-linear-gradient(top, #45484d 0%,#000000 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #45484d 0%,#000000 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C */
+
 }
 
 .elgg-button-submit:hover {
