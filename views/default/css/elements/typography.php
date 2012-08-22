@@ -20,8 +20,8 @@
 @font-face {
 	font-family: "Open Sans";
 	font-style: bold;
-	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Bold.ttf");
-	font-weight: 700;
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Semibold.ttf");
+	font-weight: 600;
 }
 
 @font-face {
