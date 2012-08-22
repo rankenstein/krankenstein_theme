@@ -26,6 +26,7 @@ label {
 }
 
 input, textarea {
+	background-color: #f7f7f7;
 	border: 1px solid #ccc;
 	color: #666;
 	font: 120% Arial, Helvetica, sans-serif;
@@ -37,11 +38,12 @@ input, textarea {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	box-shadow: inset 0 2px 3px #999;
 }
 
 input[type=text]:focus, textarea:focus {
-	border: solid 1px #ff4c12;
-	background: #ffede2;
+	/*border: solid 1px #ff4c12;*/
+	background: #E7F0E1;
 	color:#333;
 }
 

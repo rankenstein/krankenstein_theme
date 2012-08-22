@@ -116,10 +116,11 @@
 	BREADCRUMBS
 *************************************** */
 .elgg-breadcrumbs {
-	font-size: 80%;
+	/*font-size: 80%;*/
 	font-weight: bold;
 	line-height: 1.2em;
 	color: #bababa;
+	padding-top: 10px;
 }
 
 .elgg-breadcrumbs > li {

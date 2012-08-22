@@ -14,36 +14,50 @@
 .elgg-button {
 	font-size: 13px;
 	font-weight: bold;
+
+	
 	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 
 	width: auto;
-	padding: 2px 4px;
+	padding: 4px 15px;
 	cursor: pointer;
 	outline: none;
 	color: #666;
+	text-decoration: none;
 	
 	background: #eeeeee; /* Old browsers */
-	background: -moz-linear-gradient(top, #eeeeee 0%, #dddddd 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #eeeeee 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #eeeeee 0%,#dddddd 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #eeeeee 0%,#dddddd 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #eeeeee 0%,#dddddd 100%); /* W3C */
-
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
 }
+
+.elgg-button:hover {
+	background: #dbdbdb; /* Old browsers */
+	background: -moz-linear-gradient(top, #dbdbdb 0%, #b7b7b7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dbdbdb), color-stop(100%,#b7b7b7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #dbdbdb 0%,#b7b7b7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #dbdbdb 0%,#b7b7b7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #dbdbdb 0%,#b7b7b7 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #dbdbdb 0%,#b7b7b7 100%); /* W3C */
+}
+	
+
 a.elgg-button {
-	padding: 4px 15px;
+	text-decoration: none;
 }
 
 /* Submit: This button should convey, "you're about to take some definitive action" */
 .elgg-button-submit {
-	color: #ccc;
-	text-decoration: none;
+	color: #bbb;
+	text-shadow: 0 -1px 0px #000;
 
-
+	
 	background: #45484d; /* Old browsers */
 	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
@@ -54,9 +68,8 @@ a.elgg-button {
 }
 
 .elgg-button-submit:hover {
-	border-color: #d86c2c;
-	text-decoration: none;
-	color: white;
+	color: #ddd;
+	text-shadow: 0 1px 1px #222;
 	
 	background: #6d6d6d; /* Old browsers */
 	background: -moz-linear-gradient(top, #6d6d6d 0%, #3d3d3d 100%, #3d3d3d 100%, #7f7f7f 100%); /* FF3.6+ */
@@ -68,29 +81,15 @@ a.elgg-button {
 }
 
 .elgg-button-submit.elgg-state-disabled {
-	background: #999;
+	background: #45484d;
+	color: #888;
 	cursor: default;
-
 }
 
-.elgg-button-submit.elgg-state-disabled:hover {
-	color: #ccc;
-	text-decoration: none;
-
-	background: #45484d; /* Old browsers */
-	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #45484d 0%,#000000 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #45484d 0%,#000000 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C */
-}
 
 /* Cancel: This button should convey a negative but easily reversible action (e.g., turning off a plugin) */
 .elgg-button-cancel {
 	color: #888;
-	text-decoration: none;
-	
 	
 	background: #eeeeee; /* Old browsers */
 	background: -moz-linear-gradient(top, #eeeeee 0%, #dddddd 100%); /* FF3.6+ */
@@ -103,6 +102,7 @@ a.elgg-button {
 }
 .elgg-button-cancel:hover {
 	color: #333;
+
 	background: #bababa; /* Old browsers */
 	background: -moz-linear-gradient(top, #bababa 0%, #a0a0a0 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bababa), color-stop(100%,#a0a0a0)); /* Chrome,Safari4+ */
@@ -110,26 +110,13 @@ a.elgg-button {
 	background: -o-linear-gradient(top, #bababa 0%,#a0a0a0 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #bababa 0%,#a0a0a0 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #bababa 0%,#a0a0a0 100%); /* W3C */
-	text-decoration: none;
 }
 
 /* Action: This button should convey a normal, inconsequential action, such as clicking a link */
 .elgg-button-action {
-	color: #ccc;
-	padding: 4px 20px;
-	text-align: center;
-	font-weight: bold;
-	text-decoration: none;
-	cursor: pointer;
-	
-	
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+	color: #bbb;
+	text-shadow: 0 -1px 0px #000;
+
 	
 	background: #45484d; /* Old browsers */
 	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
@@ -143,7 +130,7 @@ a.elgg-button {
 
 .elgg-button-action:hover,
 .elgg-button-action:focus {
-	color: #fff;
+	color: #ddd;
 	
 	
 	background: #6d6d6d; /* Old browsers */
@@ -153,14 +140,20 @@ a.elgg-button {
 	background: -o-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* W3C */
-	text-decoration: none;
 	
+}
+
+
+.elgg-button-action.elgg-state-disabled {
+	background: #45484d;
+	color: #888;
+	cursor: default;
 }
 
 /* Delete: This button should convey "be careful before you click me" */
 .elgg-button-delete {
-	
-	color: #DB3939;
+	color: #d36900;
+	text-shadow: 0 -1px 0px #111;
 
 	background: #45484d; /* Old browsers */
 	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
@@ -172,8 +165,13 @@ a.elgg-button {
 
 	border: 1px solid #999;
 }
+
+
+
+
+
 .elgg-button-delete:hover {
-	color: #DB3939;
+	color: #d36900;
 
 	background: #6d6d6d; /* Old browsers */
 	background: -moz-linear-gradient(top, #6d6d6d 0%, #3d3d3d 100%, #3d3d3d 100%, #7f7f7f 100%); /* FF3.6+ */
@@ -185,11 +183,28 @@ a.elgg-button {
 	text-decoration: none;
 }
 
+.elgg-button-delete .elgg-state-disabled {
+	color: #d36900;
+	background-color: #333;
+	text-shadow: 0 -1px 0px #111;
+	border: 1px solid #999;
+}
+
+.elgg-button-delete .elgg-state-disabled:hover {
+	color: #d36900;
+	background-color: #333;
+	text-shadow: 0 -1px 0px #111;
+	border: 1px solid #999;
+}
+
+
+
+
 .elgg-button-dropdown {
 	padding:3px 6px;
 	text-decoration:none;
 	display:block;
-	font-weight:bold;
+	font-weight:normal;
 	position:relative;
 	margin-left:0;
 	color: white;
