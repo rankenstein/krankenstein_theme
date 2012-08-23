@@ -10,8 +10,34 @@
 /* ***************************************
 	Form Elements
 *************************************** */
+fieldset.elgg-fieldset {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #dedede;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+fieldset.elgg-fieldset legend {
+	font-weight: bold;
+	font-size: 110%;
+	padding: 3px 8px;
+	background-color: #EEE;
+	border: 1px solid #BBB;
+	
+	box-shadow: 1px 1px 2px #bbb;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
 fieldset > div {
 	margin-bottom: 15px;
+	
 }
 fieldset > div:last-child {
 	margin-bottom: 0;

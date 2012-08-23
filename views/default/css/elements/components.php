@@ -122,12 +122,12 @@
 	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 	
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3x;
+	border-radius: 3px;
 }
 .elgg-state-success {
-	background-color: #5175B0;
+	background-color: #219C8B;
 	color: white;
 }
 .elgg-state-error {

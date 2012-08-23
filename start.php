@@ -14,6 +14,7 @@ function n1_theme_init() {
 	elgg_register_css('n1:landing_page', elgg_get_simplecache_url('css', 'n1_theme/landing'));
 	
 	elgg_extend_view('css/elgg', 'n1_theme/css');
+	elgg_extend_view('js/elgg', 'n1_theme/js');
 	
 	if (elgg_is_active_plugin('pages')) {
 		// pages icon url override
