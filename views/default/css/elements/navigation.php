@@ -477,7 +477,7 @@
 	float: right;
 	margin-left: 15px;
 	font-size: 90%;
-	color: #aaa;
+	color: #666;
 	line-height: 16px;
 	height: 16px;
 }
@@ -485,7 +485,7 @@
 	margin-left: 15px;
 }
 .elgg-menu-entity > li > a, .elgg-menu-annotation > li > a {
-	color: #aaa;
+	color: #666;
 }
 <?php // need to override .elgg-menu-hz ?>
 .elgg-menu-entity > li > a, .elgg-menu-annotation > li > a {

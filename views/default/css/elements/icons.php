@@ -291,7 +291,7 @@
 }
 
 .elgg-ajax-loader {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>_graphics/ajax_loader_bw.gif) no-repeat center center;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/ajax-loader.gif) no-repeat center center;
 	min-height: 31px;
 	min-width: 31px;
 }
