@@ -14,20 +14,23 @@
 .elgg-button {
 	font-size: 13px;
 	font-weight: bold;
-
+	
+	width: auto;
+	padding: 4px 15px;
+	cursor: pointer;
+	border: 1px solid #bbb;
+	outline: none;
+	color: #666;
+	text-decoration: none;
+	
+	box-shadow: 0px 1px 1px #333;
 	
 	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 
-	width: auto;
-	padding: 4px 15px;
-	cursor: pointer;
-	outline: none;
-	color: #666;
-	text-decoration: none;
-	
+
 	background: #eeeeee; /* Old browsers */
 	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
@@ -56,28 +59,31 @@ a.elgg-button {
 .elgg-button-submit {
 	color: #bbb;
 	text-shadow: 0 -1px 0px #000;
-	
-	background: #45484d; /* Old browsers */
-	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #45484d 0%,#000000 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #45484d 0%,#000000 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C */
+	box-shadow: 0px 1px 2px #333;
+	border: none;
+
+	background: #444444; /* Old browsers */
+	background: -moz-linear-gradient(top, #444444 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #444444 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #444444 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #444444 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #444444 0%,#000000 100%); /* W3C */
 
 }
 
 .elgg-button-submit:hover {
-	color: #ddd;
+	color: #eee;
 	text-shadow: 0 1px 1px #222;
 	
-	background: #6d6d6d; /* Old browsers */
-	background: -moz-linear-gradient(top, #6d6d6d 0%, #3d3d3d 100%, #3d3d3d 100%, #7f7f7f 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d6d6d), color-stop(100%,#3d3d3d), color-stop(100%,#3d3d3d), color-stop(100%,#7f7f7f)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* W3C */
+	background: #6b6b6b; /* Old browsers */
+	background: -moz-linear-gradient(top, #6b6b6b 1%, #0f0f0f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#6b6b6b), color-stop(100%,#0f0f0f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6b6b6b 1%,#0f0f0f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6b6b6b 1%,#0f0f0f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6b6b6b 1%,#0f0f0f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6b6b6b 1%,#0f0f0f 100%); /* W3C */
+
 }
 
 .elgg-button-submit.elgg-state-disabled {
@@ -91,55 +97,44 @@ a.elgg-button {
 .elgg-button-cancel {
 	color: #888;
 	
-	background: #eeeeee; /* Old browsers */
-	background: -moz-linear-gradient(top, #eeeeee 0%, #dddddd 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #eeeeee 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #eeeeee 0%,#dddddd 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #eeeeee 0%,#dddddd 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #eeeeee 0%,#dddddd 100%); /* W3C */
+	
 	
 }
 .elgg-button-cancel:hover {
-	color: #333;
+	color: #BA1C1C;
 
-	background: #bababa; /* Old browsers */
-	background: -moz-linear-gradient(top, #bababa 0%, #a0a0a0 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bababa), color-stop(100%,#a0a0a0)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #bababa 0%,#a0a0a0 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #bababa 0%,#a0a0a0 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #bababa 0%,#a0a0a0 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #bababa 0%,#a0a0a0 100%); /* W3C */
 }
 
 /* Action: This button should convey a normal, inconsequential action, such as clicking a link */
 .elgg-button-action {
 	color: #bbb;
 	text-shadow: 0 -1px 0px #000;
+	border: none;
+	
 
 	
-	background: #45484d; /* Old browsers */
-	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #45484d 0%,#000000 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #45484d 0%,#000000 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C */
+	background: #444444; /* Old browsers */
+	background: -moz-linear-gradient(top, #444444 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #444444 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #444444 0%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #444444 0%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #444444 0%,#000000 100%); /* W3C */
 }
 
 
 .elgg-button-action:hover,
 .elgg-button-action:focus {
-	color: #ddd;
-	
-	
-	background: #6d6d6d; /* Old browsers */
-	background: -moz-linear-gradient(top, #6d6d6d 0%, #3d3d3d 100%, #3d3d3d 100%, #7f7f7f 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d6d6d), color-stop(100%,#3d3d3d), color-stop(100%,#3d3d3d), color-stop(100%,#7f7f7f)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* W3C */
+	color: #eee;
+		
+	background: #6b6b6b; /* Old browsers */
+	background: -moz-linear-gradient(top, #6b6b6b 1%, #0f0f0f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#6b6b6b), color-stop(100%,#0f0f0f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6b6b6b 1%,#0f0f0f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6b6b6b 1%,#0f0f0f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6b6b6b 1%,#0f0f0f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6b6b6b 1%,#0f0f0f 100%); /* W3C */
+
 	
 }
 
@@ -154,6 +149,7 @@ a.elgg-button {
 .elgg-button-delete {
 	color: #d36900;
 	text-shadow: 0 -1px 0px #111;
+	border: none;
 
 	background: #45484d; /* Old browsers */
 	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%); /* FF3.6+ */
@@ -161,9 +157,7 @@ a.elgg-button {
 	background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top, #45484d 0%,#000000 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #45484d 0%,#000000 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C */	
-
-	border: 1px solid #999;
+	background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C */
 }
 
 
@@ -173,13 +167,13 @@ a.elgg-button {
 .elgg-button-delete:hover {
 	color: #d36900;
 
-	background: #6d6d6d; /* Old browsers */
-	background: -moz-linear-gradient(top, #6d6d6d 0%, #3d3d3d 100%, #3d3d3d 100%, #7f7f7f 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d6d6d), color-stop(100%,#3d3d3d), color-stop(100%,#3d3d3d), color-stop(100%,#7f7f7f)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #6d6d6d 0%,#3d3d3d 100%,#3d3d3d 100%,#7f7f7f 100%); /* W3C */
+	bbackground: #6b6b6b; /* Old browsers */
+	background: -moz-linear-gradient(top, #6b6b6b 1%, #0f0f0f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#6b6b6b), color-stop(100%,#0f0f0f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6b6b6b 1%,#0f0f0f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #6b6b6b 1%,#0f0f0f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #6b6b6b 1%,#0f0f0f 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #6b6b6b 1%,#0f0f0f 100%); /* W3C */
 	text-decoration: none;
 }
 

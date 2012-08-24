@@ -136,7 +136,7 @@
 	color: #999;
 }
 .elgg-breadcrumbs > li > a:hover {
-	color: #d86c2c;
+	color: #FF4C12;
 	text-decoration: underline;
 }
 
