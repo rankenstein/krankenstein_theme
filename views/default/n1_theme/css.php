@@ -56,3 +56,9 @@
 	font-weight: bold;
 	font-size: 160%;
 }
+
+.groups-profile-icon {
+	border: 2px solid #F1F1F1;
+	box-shadow: 0px 1px 3px #666
+}
+
