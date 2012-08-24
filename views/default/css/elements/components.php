@@ -270,6 +270,15 @@
 	margin-top: 15px;
 }
 
+.elgg-comments h3{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.elgg-comments li {
+	padding: 10px 0px 10px 0px;
+}
+
 /* ***************************************
 	Image-related
 *************************************** */
