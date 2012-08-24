@@ -22,6 +22,10 @@
 	color: #333;
 }
 
+#profile-details h2 {
+	font-weight: bold;
+}
+
 .file-photo {
 	margin-top: 15px;
 }
@@ -43,6 +47,12 @@
 	color: #333;
 }
 
-.elgg-gallery .elgg-head {
+ .tidypics-gallery .elgg-head {
 	margin: 10px;
+}
+
+#cboxTitle h3 {
+	color: #eee;	
+	font-weight: bold;
+	font-size: 160%;
 }

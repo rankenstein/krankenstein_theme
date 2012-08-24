@@ -60,10 +60,12 @@ p:last-child {
 pre, code {
 	font-family: Monaco, "Courier New", Courier, monospace;
 	font-size: 12px;
+	padding:2px;
 	
-	background:#EBF5FF;
-	color:#000000;
+	background-color:#333;
+	color:#eee;
 	overflow:auto;
+	/*box-shadow: 1px 1px 1px #333;*/
 
 	overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
 
@@ -87,15 +89,18 @@ code {
 }
 
 blockquote {
-	line-height: 1.3em;
-	padding:3px 15px;
-	margin:0px 0 15px 0;
-	background:#EBF5FF;
-	border:none;
 	
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	line-height: 1.3em;
+	padding:10px 20px 10px 10px;
+	margin:5px 5px 15px 20px;
+	background: #E6D37E url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/quotes.png) no-repeat right;
+	border:none;
+	box-shadow: 0px 1px 3px #666;
+	
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {

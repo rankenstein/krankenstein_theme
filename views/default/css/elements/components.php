@@ -283,9 +283,10 @@
 	Image-related
 *************************************** */
 .elgg-photo {
-	border: 1px solid #ccc;
-	padding: 3px;
+	border: 1px solid #CCC;
+	padding: 1px;
 	background-color: white;
+	box-shadow: 0px 1px 1px #666;
 }
 
 /* ***************************************

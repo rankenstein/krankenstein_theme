@@ -503,6 +503,7 @@
 *************************************** */
 .elgg-menu-owner-block li a {
 	display: block;
+	font-weight: bold;
 	
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;

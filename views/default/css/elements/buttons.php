@@ -23,7 +23,7 @@
 	color: #666;
 	text-decoration: none;
 	
-	box-shadow: 0px 1px 1px #333;
+	box-shadow: 0px 1px 1px #888;
 	
 	
 	-webkit-border-radius: 5px;
