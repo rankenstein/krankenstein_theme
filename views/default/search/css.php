@@ -34,16 +34,16 @@ Search plugin
 }
 
 .search-highlight {
-	background-color: #bbdaf7;
+	background-color: #FFF01C;
 }
 .search-highlight-color1 {
-	background-color: #bbdaf7;
+	background-color: #FFF01C;
 }
 .search-highlight-color2 {
-	background-color: #A0FFFF;
+	background-color: #BFF553;
 }
 .search-highlight-color3 {
-	background-color: #FDFFC3;
+	background-color: #F062A4;
 }
 .search-highlight-color4 {
 	background-color: #ccc;

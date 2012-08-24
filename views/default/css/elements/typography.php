@@ -31,6 +31,7 @@
 	font-weight: 400;
 }
 
+
 body {
 	font-size: 72%;
 	line-height: 1.4em;
@@ -155,6 +156,7 @@ h6 { font-size: 0.8em; }
 *************************************** */
 .elgg-output {
 	margin-top: 10px;
+	line-height: 1.7em;
 }
 
 .elgg-output dt { font-weight: bold }

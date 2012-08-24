@@ -53,7 +53,8 @@ label {
 
 input, textarea {
 	color: #666;
-	font: 120% Arial, Helvetica, sans-serif;
+	font-family: "Open Sans";
+	font-size: 120%;
 	padding: 5px;
 	width: 100%;	
 }
@@ -77,6 +78,7 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {
 	/*border: solid 1px #ff4c12;*/
 	/*background: #D5E2F7;*/
 	background: white;
+	border: 1px solid #888;
 	color:#333;
 }
 

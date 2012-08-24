@@ -120,7 +120,7 @@
 	font-weight: bold;
 	line-height: 1.2em;
 	color: #bababa;
-	padding-top: 10px;
+	margin: 8px 0px;
 }
 
 .elgg-breadcrumbs > li {
@@ -366,12 +366,12 @@
 }
 .elgg-menu-page a:hover {
 	background-color: #333;
-	color: #aaa;
+	color: #eee;
 	text-decoration: none;
 }
 .elgg-menu-page li.elgg-state-selected > a {
 	background-color: #333;
-	color: #ccc;
+	color: #eee;
 }
 .elgg-menu-page .elgg-child-menu {
 	display: none;
@@ -510,7 +510,7 @@
 }
 .elgg-menu-owner-block li a:hover {
 	background-color: #333;
-	color: #aaa;
+	color: #eee;
 	text-decoration: none;
 }
 .elgg-menu-owner-block li.elgg-state-selected > a {
