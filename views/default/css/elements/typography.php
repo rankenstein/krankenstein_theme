@@ -141,6 +141,7 @@ h6 { font-size: 0.8em; }
 	display: block;
 	font-size: 85%;
 	font-style: italic;
+	padding: 10px 0px 10px 0px;
 }
 
 .elgg-quiet {

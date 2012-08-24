@@ -33,3 +33,16 @@
 .tasklist-graph div {
 	background-color: #444;
 }
+
+.tidypics-heading {
+	color: #FF4C12;
+	
+}
+
+.tidypics-heading:hover {
+	color: #333;
+}
+
+.elgg-gallery .elgg-head {
+	margin: 10px;
+}

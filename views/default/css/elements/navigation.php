@@ -31,6 +31,7 @@
 	color: #555;
 	border: 1px solid #ccc;
 	font-size: 12px;
+	text-shadow: 0px 1px 1px white, 0 -1px 1px #AAA;
 
 	background: #f7f7f7; /* Old browsers */
 	background: -moz-linear-gradient(top, #f7f7f7 0%, #d3d3d3 100%); /* FF3.6+ */
@@ -43,6 +44,7 @@
 .elgg-pagination a:hover {
 	color: #333;
 	text-decoration: none;
+	
 	
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
@@ -58,7 +60,8 @@
 }
 .elgg-pagination .elgg-state-selected span, .elgg-pagination a:active {
 	color: #eee;
-
+	
+	text-shadow: 0px 1px 1px #999, 0 -1px 1px #222;
 	
 	background: #4f4f4f; /* Old browsers */
 	background: -moz-linear-gradient(top, #4f4f4f 0%, #7a7a7a 100%); /* FF3.6+ */
