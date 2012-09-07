@@ -312,6 +312,10 @@ input[type="radio"] {
 	text-shadow: 0 0 6px white;
 }
 
+.ui-combobox {
+	height: 23px !important;
+}
+
 /* ***************************************
 	USER PICKER
 *************************************** */

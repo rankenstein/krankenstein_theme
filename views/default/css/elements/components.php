@@ -195,7 +195,7 @@
 	float: right;
 	font-size: 85%;
 	padding: 1px 7px;
-	border-right: solid 1px #888;
+	border-right: solid 1px #BBB;
 	
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
@@ -209,7 +209,13 @@
 	border-top: none;
 	border-right: solid 1px #BBB;
 	border-bottom: solid 1px #BBB;
+	
+	-webkit-border-radius: 3px;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius: 3px;
+	-moz-border-radius-topright: 0;
 	border-radius: 3px;
+	border-top-right-radius: 0;
 }
 .elgg-river-comments li:first-child {
 	-webkit-border-radius: 5px 0 0;
@@ -275,8 +281,8 @@
 	margin-bottom: 5px;
 }
 
-.elgg-comments li {
-	padding: 10px 0px 10px 0px;
+.elgg-comments li.elgg-item {
+	padding: 10px 0;
 }
 
 /* ***************************************

@@ -38,16 +38,23 @@
 	background-color: #444;
 }
 
+.elgg-task-icon {
+	box-shadow: none;
+}
+
+.treeview a.selected {
+	background-color: transparent !important;
+}
+
 .tidypics-heading {
-	color: #FF4C12;
-	
+	color: #FF4C12;	
 }
 
 .tidypics-heading:hover {
 	color: #333;
 }
 
- .tidypics-gallery .elgg-head {
+.tidypics-gallery .elgg-head {
 	margin: 10px;
 }
 
