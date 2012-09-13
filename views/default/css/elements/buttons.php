@@ -57,7 +57,7 @@ a.elgg-button {
 
 /* Submit: This button should convey, "you're about to take some definitive action" */
 .elgg-button-submit {
-	color: #bbb;
+	color: #ddd;
 	text-shadow: 0 -1px 0px #000;
 	box-shadow: 0px 1px 2px #333;
 	border: none;
@@ -107,7 +107,7 @@ a.elgg-button {
 
 /* Action: This button should convey a normal, inconsequential action, such as clicking a link */
 .elgg-button-action {
-	color: #bbb;
+	color: #ddd;
 	text-shadow: 0 -1px 0px #000;
 	border: none;
 	

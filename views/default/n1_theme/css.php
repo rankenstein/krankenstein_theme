@@ -69,3 +69,7 @@
 	box-shadow: 0px 1px 3px #666
 }
 
+.elgg-page .cke_skin_BootstrapCK-Skin .cke_contents, .cke_skin_BootstrapCK-Skin .cke_contents iframe {
+	background-color: #F7F7F7 !important;
+	border: none !important;
+}
