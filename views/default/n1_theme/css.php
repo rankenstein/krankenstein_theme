@@ -26,6 +26,37 @@
 	font-weight: bold;
 }
 
+.elgg-access, .elgg-input-access > option {
+	padding-left: 19px;
+	background-image: url('<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/privacy.png');
+	background-repeat: no-repeat;
+}
+
+.elgg-access {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.elgg-access-private, .elgg-input-access > option[value="<?php echo ACCESS_PRIVATE; ?>"] {
+	background-position: 0 -65px;
+}
+
+.elgg-access-friends, .elgg-input-access > option[value="<?php echo ACCESS_FRIENDS; ?>"] {
+	background-position: 0 -51px;
+}
+
+.elgg-access-loggedin, .elgg-input-access > option[value="<?php echo ACCESS_LOGGED_IN; ?>"] {
+	background-position: 0 -34px;
+}
+
+.elgg-access-public, .elgg-input-access > option[value="<?php echo ACCESS_PUBLIC; ?>"] {
+	background-position: 0 -16px;
+}
+
+.elgg-access-group, .elgg-input-access > option {
+	background-position: 0 0;
+}
+
 .file-photo {
 	margin-top: 15px;
 }
