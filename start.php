@@ -45,7 +45,7 @@ function n1_theme_pages_icon_url_override($hook, $type, $returnvalue, $params) {
 			  elgg_instanceof($entity, 'object', 'subpad')) {
 		$icon = 'pad';
 	} else {
-		return false;
+		return $returnvalue;
 	}
 	switch ($params['size']) {
 		case 'topbar':
