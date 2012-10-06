@@ -43,12 +43,9 @@ margin-top: 3px;
 .elgg-item .elgg-subtext {
 	margin-bottom: 5px;
 }
-.elgg-item {
-	margin: 10px 5px;
-}
 
-.elgg-content {
-	margin: 10px 5px;
+.elgg-item .elgg-content, .elgg-content .elgg-output, .elgg-item .elgg-output {
+	margin: 5px;
 	background-color: #f7f7f7;
 	border: 1px solid #ddd;
 	padding: 10px;
@@ -57,6 +54,8 @@ margin-top: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
+
+
 
 /* ***************************************
 	Gallery
