@@ -105,6 +105,7 @@ blockquote {
 
 h1, h2, h3, h4, h5, h6 {
 	color: #333;
+	font-weight: bold;
 }
 
 h1 { font-size: 2em; visibility: hidden;}
@@ -128,6 +129,7 @@ h6 { font-size: 0.8em; }
 	float: left;
 	max-width: 530px;
 	margin-right: 10px;
+	
 }
 .elgg-heading-basic {
 	color: #616068;
