@@ -205,7 +205,7 @@ margin-top: 3px;
 
 .elgg-river-comments-tab {
 	display: block;
-	background-color: #DDD;
+	background-color: #f7f7f7;
 	color: #444;
 	margin-top: 5px;
 	width: auto;
@@ -222,7 +222,7 @@ margin-top: 3px;
 <?php //@todo components.php ?>
 .elgg-river-comments {
 	margin: 0;
-	background-color: #DDD;
+	background-color: #f7f7f7;
 	border-top: none;
 	border-right: solid 1px #BBB;
 	border-bottom: solid 1px #BBB;
@@ -234,6 +234,12 @@ margin-top: 3px;
 	border-radius: 3px;
 	border-top-right-radius: 0;
 }
+
+.elgg-river-comments .elgg-output {
+	border: none;
+
+}
+
 .elgg-river-comments li:first-child {
 	-webkit-border-radius: 5px 0 0;
 	-moz-border-radius: 5px 0 0;
