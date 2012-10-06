@@ -43,8 +43,19 @@ margin-top: 3px;
 .elgg-item .elgg-subtext {
 	margin-bottom: 5px;
 }
-.elgg-item .elgg-content {
+.elgg-item {
 	margin: 10px 5px;
+}
+
+.elgg-content {
+	margin: 10px 5px;
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	padding: 10px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 /* ***************************************
@@ -182,7 +193,7 @@ margin-top: 3px;
 }
 
 .elgg-river-summary{
-	font-size: 95%;
+	font-size: 94%;
 }
 .elgg-river-attachments .elgg-avatar,
 .elgg-river-attachments .elgg-icon {
