@@ -182,7 +182,7 @@ margin-top: 3px;
 }
 
 .elgg-river-summary{
-	font-size: 90%;
+	font-size: 95%;
 }
 .elgg-river-attachments .elgg-avatar,
 .elgg-river-attachments .elgg-icon {
