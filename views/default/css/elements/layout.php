@@ -25,16 +25,16 @@ body {
 	min-width: 998px;
 }
 .elgg-page-default .elgg-page-header > .elgg-inner {
-	width: 980px;
+	min-width: 980px;
 	margin: 0 auto;
 	height: 90px;
 }
 .elgg-page-default .elgg-page-body > .elgg-inner {
-	width: 980px;
+	min-width: 980px;
 	margin: 0 auto;
 }
 .elgg-page-default .elgg-page-footer > .elgg-inner {
-	width: 940px;
+	min-width: 940px;
 	margin: 0 auto;
 	padding: 5px 20px;
 	border-top: 1px solid #DEDEDE;
@@ -76,22 +76,28 @@ body {
 	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/n1_small.png) no-repeat 650px bottom;
 }
 
-/***** PAGE BODY LAYOUT ******/
+/***** LIQUID LAYOUT *******/
+
+.elgg-page-body {
+	position: relative;	/* This fixes the IE7 overflow hidden bug */
+	clear: both;
+	float: left;
+	width: 100%;		/* width of whole page */
+	overflow: hidden;	/* This chops off any overhanging divs */
+	background-color: #dedede;
+}
 .elgg-layout {
-	min-height: 360px;
-}
-.elgg-layout-one-sidebar {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/sidebar_background.gif) repeat-y right top;
-}
-.elgg-layout-two-sidebar {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/two_sidebar_background.gif) repeat-y right top;
+	right: 25%;
+	background-color: #eee;
+	float: left;
+	position: relative;
+	width: 100%;
+	min-height: 500px;
 }
 .elgg-sidebar {
-	position: relative;
-	padding: 20px 10px;
-	float: right;
-	width: 220px;
-	margin: 0 0 0 10px;
+	left: 31%;
+	width: 21%;
+	padding: 20px;
 }
 .elgg-sidebar-alt {
 	position: relative;
@@ -101,8 +107,8 @@ body {
 	margin: 0 10px 0 0;
 }
 .elgg-main {
-	position: relative;
-	min-height: 360px;
+	left: 27%;
+	width: 71%;
 	padding: 10px;
 	padding-left: 20px;
 }
@@ -111,9 +117,18 @@ body {
 	margin-bottom: 10px;
 }
 
+.elgg-main, .elgg-sidebar {
+	float: left;
+	position: relative;
+	padding: 1em 0 1em 0;
+	overflow: hidden;
+}
+
 /***** PAGE FOOTER ******/
 .elgg-page-footer {
-	position: relative;
+	clear:both;
+	float:left;
+	width:100%;
 }
 .elgg-page-footer {
 	color: #999;

@@ -353,7 +353,6 @@
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-
 .elgg-avatar-large > a > img {
 	width: 200px;
 	height: 200px;
