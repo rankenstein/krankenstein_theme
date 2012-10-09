@@ -43,9 +43,19 @@ margin-top: 3px;
 .elgg-item .elgg-subtext {
 	margin-bottom: 5px;
 }
-.elgg-item .elgg-content {
-	margin: 10px 5px;
+
+.elgg-item .elgg-content, .elgg-content .elgg-output, .elgg-item .elgg-output {
+	margin: 5px;
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	padding: 10px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
+
+
 
 /* ***************************************
 	Gallery
@@ -111,6 +121,16 @@ margin-top: 3px;
 	margin-bottom: 20px;
 }
 
+.elgg-owner-block h3 {
+	
+}
+.elgg-owner-block .elgg-subtext {
+	padding: 2px 0 9px 0;
+}
+
+
+
+
 /* ***************************************
 	Messages
 *************************************** */
@@ -172,14 +192,17 @@ margin-top: 3px;
 .elgg-river-message,
 .elgg-river-content {
 	color: #444;
-	background-color: #DDD;
-	border-right: solid 1px #BBB;
-	border-bottom: solid 1px #BBB;
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
 	border-radius: 3px;
-	font-size: 85%;
+	font-size: 100%;
 	line-height: 1.5em;
 	margin: 8px 0 5px 0;
 	padding: 5px;
+}
+
+.elgg-river-summary{
+	font-size: 94%;
 }
 .elgg-river-attachments .elgg-avatar,
 .elgg-river-attachments .elgg-icon {
@@ -192,7 +215,7 @@ margin-top: 3px;
 
 .elgg-river-comments-tab {
 	display: block;
-	background-color: #DDD;
+	background-color: #f7f7f7;
 	color: #444;
 	margin-top: 5px;
 	width: auto;
@@ -209,7 +232,7 @@ margin-top: 3px;
 <?php //@todo components.php ?>
 .elgg-river-comments {
 	margin: 0;
-	background-color: #DDD;
+	background-color: #f7f7f7;
 	border-top: none;
 	border-right: solid 1px #BBB;
 	border-bottom: solid 1px #BBB;
@@ -221,6 +244,12 @@ margin-top: 3px;
 	border-radius: 3px;
 	border-top-right-radius: 0;
 }
+
+.elgg-river-comments .elgg-output {
+	border: none;
+
+}
+
 .elgg-river-comments li:first-child {
 	-webkit-border-radius: 5px 0 0;
 	-moz-border-radius: 5px 0 0;

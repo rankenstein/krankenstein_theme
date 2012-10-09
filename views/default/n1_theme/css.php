@@ -96,8 +96,9 @@
 }
 
 .groups-profile-icon {
+	height: 201px;
 	border: 2px solid #F1F1F1;
-	box-shadow: 0px 1px 3px #666
+	box-shadow: 0px 1px 3px #666;
 }
 
 .elgg-page .cke_skin_BootstrapCK-Skin .cke_contents, .cke_skin_BootstrapCK-Skin .cke_contents iframe {

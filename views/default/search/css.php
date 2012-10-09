@@ -23,8 +23,12 @@ Search plugin
 }
 .elgg-search input[type=text] {
 	border: 0;
-	background: #EEE url(<?php echo elgg_get_site_url(); ?>_graphics/elgg_sprites.png) no-repeat 210px -914px;
+	background: #EEE url(<?php echo elgg_get_site_url(); ?>_graphics/elgg_sprites.png) no-repeat 210px -916px;
+	height: 20px;
+	font-size: 1em;
+	margin-top: 13px;
 }
+
 .search-list li {
 	padding: 5px 0 0;
 }
