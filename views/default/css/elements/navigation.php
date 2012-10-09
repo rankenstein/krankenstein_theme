@@ -364,8 +364,8 @@
 	border-radius: 3px;
 	font-weight: bold;
 	color: #333;
-	margin: 0 0 3px;
-	padding: 2px 4px 2px 8px;
+	margin: 0 0 3px 5px;
+	padding: 2px 1px 2px 8px
 }
 .elgg-menu-page a:hover {
 	background-color: #333;
@@ -375,6 +375,8 @@
 .elgg-menu-page li.elgg-state-selected > a {
 	background-color: #333;
 	color: #eee;
+	margin: 0 0 3px 5px;
+	padding: 2px 1px 2px 8px
 }
 .elgg-menu-page .elgg-child-menu {
 	display: none;

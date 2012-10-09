@@ -189,6 +189,6 @@ a.elgg-widget-collapsed:before {
 	padding: 10px;
 }
 .elgg-widget-placeholder {
-	border: 2px dashed #dedede;
+	border: 2px dashed #1F9C93;
 	margin-bottom: 15px;
 }

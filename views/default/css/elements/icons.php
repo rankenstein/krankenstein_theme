@@ -353,6 +353,7 @@
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
+
 .elgg-avatar-large > a > img {
 	width: 200px;
 	height: 200px;
@@ -368,6 +369,10 @@
 	background-color: #eee;
 	box-shadow: 0px 1px 2px #333;
 	padding: 1px;
+
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
 }
 
 .subgroups-icons a img {
@@ -377,6 +382,10 @@
 	box-shadow: 0px 1px 2px #333;
 	padding: 1px;
 	margin: 0px 3px 3px 0px;
+	
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
 }
 
 
