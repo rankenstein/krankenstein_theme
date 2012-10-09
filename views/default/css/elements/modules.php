@@ -16,13 +16,24 @@
 
 /* Info */
 .elgg-module-info > .elgg-head {
-	background: #dedede;
+	width: 97%;	
 	padding: 5px;
 	margin-bottom: 10px;
+	border: 1px solid #BBB;
+	text-shadow: 0px 1px white;
 	
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+
+	background: #e5e5e5; /* Old browsers */
+	background: -moz-linear-gradient(top, #e5e5e5 0%, #e1e1e1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(100%,#e1e1e1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #e5e5e5 0%,#e1e1e1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #e5e5e5 0%,#e1e1e1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #e5e5e5 0%,#e1e1e1 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #e5e5e5 0%,#e1e1e1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#e1e1e1',GradientType=0 ); /* IE6-9 */
 }
 .elgg-module-info > .elgg-head * {
 	color: #333;
