@@ -10,6 +10,7 @@ Search plugin
 ***********************************/
 .elgg-search-header {
 	bottom: 15px;
+	width: 24%;
 	height: 23px;
 	position: absolute;
 	right: 0;
@@ -22,11 +23,13 @@ Search plugin
 	display: none;
 }
 .elgg-search input[type=text] {
-	border: 0;
-	background: #EEE url(<?php echo elgg_get_site_url(); ?>_graphics/elgg_sprites.png) no-repeat 210px -916px;
 	height: 20px;
-	font-size: 1em;
+	width: 97%;
 	margin-top: 13px;
+	border: 0;
+	background: #EEE url(http://dev.n-1.cc/_graphics/elgg_sprites.png) no-repeat 99% -916px;
+	font-size: 1em;
+	
 }
 
 .search-list li {
