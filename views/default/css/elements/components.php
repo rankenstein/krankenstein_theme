@@ -121,6 +121,16 @@ margin-top: 3px;
 	margin-bottom: 20px;
 }
 
+.elgg-owner-block h3 {
+	
+}
+.elgg-owner-block .elgg-subtext {
+	padding: 2px 0 9px 0;
+}
+
+
+
+
 /* ***************************************
 	Messages
 *************************************** */

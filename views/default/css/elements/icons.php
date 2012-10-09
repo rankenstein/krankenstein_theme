@@ -229,7 +229,7 @@
 	background-position: 0 -1242px;
 }
 .elgg-icon-tag {
-	background-position: 0 -1260px;
+	background-position: 0 -1242px;
 }
 .elgg-icon-thumbs-down-alt:hover {
 	background-position: 0 -1278px;
@@ -361,3 +361,22 @@
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
+
+
+.elgg-owner-block .elgg-image {
+	height: 25px;	
+	background-color: #eee;
+	box-shadow: 0px 1px 2px #333;
+	padding: 1px;
+}
+
+.subgroups-icons a img {
+	width: 25px;
+	height: 25px;
+	background-color: #eee;
+	box-shadow: 0px 1px 2px #333;
+	padding: 1px;
+	margin: 0px 3px 3px 0px;
+}
+
+
