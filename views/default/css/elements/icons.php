@@ -13,7 +13,7 @@
 *************************************** */
 
 .elgg-icon {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/graphics/elgg_sprites.png) no-repeat left;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/elgg_sprites.png) no-repeat left;
 	width: 16px;
 	height: 16px;
 	margin: 0 2px;
@@ -34,7 +34,7 @@
 	background-position: 0 -72px;
 }
 .elgg-icon-calendar {
-	background-position: 0 -90px;
+	background-position: 0 -91px;
 }
 .elgg-icon-cell-phone {
 	background-position: 0 -108px;
@@ -70,7 +70,7 @@
 	background-position: 0 -288px;
 }
 .elgg-icon-download {
-	background-position: 0 -306px;
+	background-position: 0 -304px;
 }
 .elgg-icon-eye {
 	background-position: 0 -324px;
@@ -148,10 +148,10 @@
 	background-position: 0 -756px;
 }
 .elgg-icon-refresh:hover {
-	background-position: 0 -774px;
+	background-position: 0 -775px;
 }
 .elgg-icon-refresh {
-	background-position: 0 -792px;
+	background-position: 0 -791px;
 }
 .elgg-icon-round-arrow-left {
 	background-position: 0 -810px;
@@ -175,7 +175,7 @@
 	background-position: 0 -918px;
 }
 .elgg-icon-search {
-	background-position: 0 -936px;
+	background-position: 0 -934px;
 }
 .elgg-icon-settings-alt:hover {
 	background-position: 0 -954px;
@@ -229,7 +229,7 @@
 	background-position: 0 -1242px;
 }
 .elgg-icon-tag {
-	background-position: 0 -1260px;
+	background-position: 0 -1242px;
 }
 .elgg-icon-thumbs-down-alt:hover {
 	background-position: 0 -1278px;
@@ -270,10 +270,14 @@
 	background-position: 0 -1476px;
 }
 .elgg-icon-users {
-	background-position: 0 -1494px;
+	background-position: 0 -1493px;
 }
 .elgg-icon-video {
 	background-position: 0 -1512px;
+}
+.elgg-icon-logout {
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/_graphics/usernavicons.png) no-repeat left;
+	background-position: 0 0;
 }
 
 
@@ -287,9 +291,9 @@
 }
 
 .elgg-ajax-loader {
-	background: white url(<?php echo elgg_get_site_url(); ?>_graphics/ajax_loader_bw.gif) no-repeat center center;
-	min-height: 33px;
-	min-width: 33px;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/ajax-loader.gif) no-repeat center center;
+	min-height: 31px;
+	min-width: 31px;
 }
 
 /* ***************************************
@@ -298,6 +302,9 @@
 .elgg-avatar {
 	position: relative;
 	display: inline-block;
+
+	border: 2px solid #F1F1F1;
+	box-shadow: 0px 1px 3px #666;
 }
 .elgg-avatar > a > img {
 	display: block;
@@ -325,9 +332,9 @@
 	height: 40px;
 	
 	/* remove the border-radius if you don't want rounded avatars in supported browsers */
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	
 	-moz-background-clip:  border;
 	background-clip:  border;
@@ -341,16 +348,35 @@
 .elgg-avatar-medium > a > img {
 	width: 100px;
 	height: 100px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .elgg-avatar-large > a > img {
 	width: 200px;
 	height: 200px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
-.elgg-icon-groups {
-	background-position: 0 -1530px;
+
+.elgg-owner-block .elgg-image {
+	height: 25px;	
+	background-color: #eee;
+	box-shadow: 0px 1px 2px #333;
+	padding: 1px;
 }
 
-.elgg-icon-groups:hover {
-	background-position: 0 -1550px;
+.subgroups-icons a img {
+	width: 25px;
+	height: 25px;
+	background-color: #eee;
+	box-shadow: 0px 1px 2px #333;
+	padding: 1px;
+	margin: 0px 3px 3px 0px;
 }
+
+

@@ -7,17 +7,6 @@
  * @package Elgg.Core
  * @subpackage UI
  */
-/**
- * elgg-body fills the space available to it.
- * It uses hidden text to expand itself. The combination of auto width, overflow
- * hidden, and the hidden text creates this effect.
- *
- * This allows us to float fixed width divs to either side of an .elgg-body div
- * without having to specify the body div's width.
- *
- * @todo check what happens with long <pre> tags or large images
- * @todo Move this to its own file -- it is very complicated and should not have to be overridden.
- */
 ?>
 
 /* ***************************************
@@ -35,6 +24,10 @@
 	margin-left: 5px;
 }
 
+.elgg-subtext {
+margin-top: 3px;
+}
+
 /* ***************************************
 	List
 *************************************** */
@@ -50,9 +43,19 @@
 .elgg-item .elgg-subtext {
 	margin-bottom: 5px;
 }
-.elgg-item .elgg-content {
-	margin: 10px 5px;
+
+.elgg-item .elgg-content, .elgg-content .elgg-output, .elgg-item .elgg-output {
+	margin: 5px;
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	padding: 10px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
+
+
 
 /* ***************************************
 	Gallery
@@ -96,7 +99,11 @@
 	width: 100%;
 	border-top: 1px solid #ccc;
 }
-.elgg-table-alt td {
+.elgg-table-alt th {
+	background-color: #eee;
+	font-weight: bold;
+}
+.elgg-table-alt td, .elgg-table-alt th {
 	padding: 2px 4px 2px 4px;
 	border-bottom: 1px solid #ccc;
 }
@@ -114,6 +121,16 @@
 	margin-bottom: 20px;
 }
 
+.elgg-owner-block h3 {
+	
+}
+.elgg-owner-block .elgg-subtext {
+	padding: 2px 0 9px 0;
+}
+
+
+
+
 /* ***************************************
 	Messages
 *************************************** */
@@ -129,18 +146,19 @@
 	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
 	
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3x;
+	border-radius: 3px;
 }
 .elgg-state-success {
-	background-color: black;
+	background-color: #219C8B;
+	color: white;
 }
 .elgg-state-error {
-	background-color: red;
+	background-color: #DE0218;
 }
 .elgg-state-notice {
-	background-color: #4690D6;
+	background-color: #ff4c12;
 }
 
 /* ***************************************
@@ -161,18 +179,30 @@
 .elgg-river-timestamp {
 	color: #666;
 	font-size: 85%;
-	font-style: italic;
 	line-height: 1.2em;
+}
+.elgg-river-timestamp:before {
+	content: '(';
+}
+.elgg-river-timestamp:after {
+	content: ')';
 }
 
 .elgg-river-attachments,
 .elgg-river-message,
 .elgg-river-content {
-	border-left: 1px solid #CCC;
-	font-size: 85%;
+	color: #444;
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 100%;
 	line-height: 1.5em;
 	margin: 8px 0 5px 0;
-	padding-left: 5px;
+	padding: 5px;
+}
+
+.elgg-river-summary{
+	font-size: 94%;
 }
 .elgg-river-attachments .elgg-avatar,
 .elgg-river-attachments .elgg-icon {
@@ -185,13 +215,14 @@
 
 .elgg-river-comments-tab {
 	display: block;
-	background-color: #EEE;
-	color: #4690D6;
+	background-color: #f7f7f7;
+	color: #444;
 	margin-top: 5px;
 	width: auto;
 	float: right;
 	font-size: 85%;
 	padding: 1px 7px;
+	border-right: solid 1px #BBB;
 	
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
@@ -201,8 +232,24 @@
 <?php //@todo components.php ?>
 .elgg-river-comments {
 	margin: 0;
+	background-color: #f7f7f7;
 	border-top: none;
+	border-right: solid 1px #BBB;
+	border-bottom: solid 1px #BBB;
+	
+	-webkit-border-radius: 3px;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius: 3px;
+	-moz-border-radius-topright: 0;
+	border-radius: 3px;
+	border-top-right-radius: 0;
 }
+
+.elgg-river-comments .elgg-output {
+	border: none;
+
+}
+
 .elgg-river-comments li:first-child {
 	-webkit-border-radius: 5px 0 0;
 	-moz-border-radius: 5px 0 0;
@@ -214,7 +261,6 @@
 	border-radius-bottomleft: 0 0 5px 5px;
 }
 .elgg-river-comments li {
-	background-color: #EEE;
 	border-bottom: none;
 	padding: 4px;
 	margin-bottom: 2px;
@@ -263,30 +309,39 @@
 	margin-top: 15px;
 }
 
+.elgg-comments h3{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.elgg-comments li.elgg-item {
+	padding: 10px 0;
+}
+
 /* ***************************************
 	Image-related
 *************************************** */
 .elgg-photo {
-	border: 1px solid #ccc;
-	padding: 3px;
+	border: 1px solid #CCC;
+	padding: 1px;
 	background-color: white;
+	box-shadow: 0px 1px 1px #666;
 }
 
 /* ***************************************
 	Tags
 *************************************** */
 .elgg-tags {
-	display: inline;
 	font-size: 85%;
 }
-.elgg-tags li {
-	display: inline;
+.elgg-tags > li {
+	float:left;
 	margin-right: 5px;
 }
-.elgg-tags li:after {
+.elgg-tags li.elgg-tag:after {
 	content: ",";
 }
-.elgg-tags li:last-child:after {
+.elgg-tags li.elgg-tag:last-child:after {
 	content: "";
 }
 .elgg-tagcloud {

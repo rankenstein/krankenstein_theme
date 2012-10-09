@@ -14,32 +14,35 @@
 /* ***************************************
 	PAGE LAYOUT
 *************************************** */
+
+body {
+	background-color: #eeeeee;
+}
+
 /***** DEFAULT LAYOUT ******/
 <?php // the width is on the page rather than topbar to handle small viewports ?>
 .elgg-page-default {
 	min-width: 998px;
 }
 .elgg-page-default .elgg-page-header > .elgg-inner {
-	width: 990px;
+	width: 980px;
 	margin: 0 auto;
 	height: 90px;
 }
 .elgg-page-default .elgg-page-body > .elgg-inner {
-	width: 94%;
+	width: 980px;
 	margin: 0 auto;
-	padding-top: 25px;
 }
 .elgg-page-default .elgg-page-footer > .elgg-inner {
-	width: 94;
+	width: 940px;
 	margin: 0 auto;
-	padding: 5px 0;
+	padding: 5px 20px;
 	border-top: 1px solid #DEDEDE;
 }
 
 /***** TOPBAR ******/
 .elgg-page-topbar {
-	background: #333333 url(<?php echo elgg_get_site_url(); ?>_graphics/toptoolbar_background.gif) repeat-x top left;
-	border-bottom: 1px solid #000000;
+	background-color: #333333;
 	position: relative;
 	height: 24px;
 	z-index: 9000;
@@ -66,10 +69,11 @@
 /***** PAGE HEADER ******/
 .elgg-page-header {
 	position: relative;
-	background: #4690D6 url(<?php echo elgg_get_site_url(); ?>_graphics/header_shadow.png) repeat-x bottom left;
+	background: #333333;
 }
 .elgg-page-header > .elgg-inner {
 	position: relative;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/n1_small.png) no-repeat 650px bottom;
 }
 
 /***** PAGE BODY LAYOUT ******/
@@ -77,16 +81,16 @@
 	min-height: 360px;
 }
 .elgg-layout-one-sidebar {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>_graphics/sidebar_background.gif) repeat-y right top;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/sidebar_background.gif) repeat-y right top;
 }
 .elgg-layout-two-sidebar {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>_graphics/two_sidebar_background.gif) repeat-y right top;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/two_sidebar_background.gif) repeat-y right top;
 }
 .elgg-sidebar {
 	position: relative;
 	padding: 20px 10px;
 	float: right;
-	width: 210px;
+	width: 220px;
 	margin: 0 0 0 10px;
 }
 .elgg-sidebar-alt {
@@ -100,10 +104,10 @@
 	position: relative;
 	min-height: 360px;
 	padding: 10px;
+	padding-left: 20px;
 }
 .elgg-main > .elgg-head {
 	padding-bottom: 3px;
-	border-bottom: 1px solid #CCCCCC;
 	margin-bottom: 10px;
 }
 
@@ -113,6 +117,9 @@
 }
 .elgg-page-footer {
 	color: #999;
+}
+.elgg-page-footer .elgg-inner {
+	margin: 20px;
 }
 .elgg-page-footer a:hover {
 	color: #666;

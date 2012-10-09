@@ -10,14 +10,37 @@
 /* ***************************************
 	Typography
 *************************************** */
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: bold;
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Semibold.ttf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: italic;
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Italic.ttf");
+	font-weight: 400;
+}
+
+
 body {
-	font-size: 80%;
+	font-size: 72%;
 	line-height: 1.4em;
-	font-family: "Lucida Grande", Arial, Tahoma, Verdana, sans-serif;
+	font-family: "Open Sans", Arial, Tahoma, Verdana, sans-serif;
+	color: #333333;
 }
 
 a {
-	color: #4690D6;
+	color: #ff4c12;
 }
 
 a:hover,
@@ -37,10 +60,12 @@ p:last-child {
 pre, code {
 	font-family: Monaco, "Courier New", Courier, monospace;
 	font-size: 12px;
+	padding:2px;
 	
-	background:#EBF5FF;
-	color:#000000;
+	background-color:#333;
+	color:#eee;
 	overflow:auto;
+	/*box-shadow: 1px 1px 1px #333;*/
 
 	overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
 
@@ -64,24 +89,27 @@ code {
 }
 
 blockquote {
-	line-height: 1.3em;
-	padding:3px 15px;
-	margin:0px 0 15px 0;
-	background:#EBF5FF;
-	border:none;
 	
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	line-height: 1.3em;
+	padding:10px 20px 10px 10px;
+	margin:5px 5px 15px 20px;
+	background: #E6D37E url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/quotes.png) no-repeat right;
+	border:none;
+	box-shadow: 0px 1px 3px #666;
+	
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
+	color: #333;
 	font-weight: bold;
-	color: #0054A7;
 }
 
-h1 { font-size: 1.8em; }
-h2 { font-size: 1.5em; line-height: 1.1em; padding-bottom:5px}
+h1 { font-size: 2em; visibility: hidden;}
+h2 { font-size: 1.8em; line-height: 1.1em; padding-bottom:5px}
 h3 { font-size: 1.2em; }
 h4 { font-size: 1.0em; }
 h5 { font-size: 0.9em; }
@@ -101,9 +129,10 @@ h6 { font-size: 0.8em; }
 	float: left;
 	max-width: 530px;
 	margin-right: 10px;
+	
 }
 .elgg-heading-basic {
-	color: #0054A7;
+	color: #616068;
 	font-size: 1.2em;
 	font-weight: bold;
 }
@@ -119,6 +148,7 @@ h6 { font-size: 0.8em; }
 	display: block;
 	font-size: 85%;
 	font-style: italic;
+	padding: 10px 0px 10px 0px;
 }
 
 .elgg-quiet {
@@ -126,7 +156,7 @@ h6 { font-size: 0.8em; }
 }
 
 .elgg-loud {
-	color: #0054A7;
+	color: #d86c2c;
 }
 
 /* ***************************************
@@ -134,12 +164,13 @@ h6 { font-size: 0.8em; }
 *************************************** */
 .elgg-output {
 	margin-top: 10px;
+	line-height: 1.7em;
 }
 
 .elgg-output dt { font-weight: bold }
 .elgg-output dd { margin: 0 0 1em 1em }
 
-.elgg-output ul, ol {
+.elgg-output ul, .elgg-output ol {
 	margin: 0 1.5em 1.5em 0;
 	padding-left: 1.5em;
 }

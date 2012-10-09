@@ -10,8 +10,34 @@
 /* ***************************************
 	Form Elements
 *************************************** */
+fieldset.elgg-fieldset {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #dedede;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+fieldset.elgg-fieldset legend {
+	font-weight: bold;
+	font-size: 110%;
+	padding: 3px 8px;
+	background-color: #EEE;
+	border: 1px solid #BBB;
+	
+	box-shadow: 1px 1px 2px #bbb;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
 fieldset > div {
 	margin-bottom: 15px;
+	
 }
 fieldset > div:last-child {
 	margin-bottom: 0;
@@ -22,30 +48,48 @@ fieldset > div:last-child {
 }
 
 label {
-	font-weight: bold;
 	color: #333;
-	font-size: 110%;
 }
 
 input, textarea {
-	border: 1px solid #ccc;
 	color: #666;
-	font: 120% Arial, Helvetica, sans-serif;
+	font-family: "Open Sans";
+	font-size: 120%;
 	padding: 5px;
 	width: 100%;	
+}
+
+input[type=text], input[type=password], textarea {
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
+	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
+	box-shadow: inset 0 2px 3px #999;
 }
 
-input:focus, textarea:focus {
-	border: solid 1px #4690d6;
-	background: #e4ecf5;
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+	/*border: solid 1px #ff4c12;*/
+	/*background: #D5E2F7;*/
+	background: white;
+	border: 1px solid #888;
 	color:#333;
 }
+
+input[type=file], input[type=button], input[type=reset], input[type=submit] {
+	border: none;	
+}
+
+input[type=file] {
+	background: none;
+}
+
 
 textarea {
 	height: 200px;
@@ -104,7 +148,7 @@ input[type="radio"] {
 	margin: 0;
 	padding:0;
 	position: relative;
-	width: 100%;
+	width: 730px;
 }
 .friends-picker {
 	position: relative;
@@ -185,7 +229,7 @@ input[type="radio"] {
 	color:white !important;
 }
 .friends-picker-navigation li a.current {
-	background: #4690D6;
+	background: #ff4c12;
 	color:white !important;
 }
 .friends-picker-navigation-l, .friends-picker-navigation-r {
@@ -238,6 +282,8 @@ input[type="radio"] {
 *************************************** */
 <?php //autocomplete will expand to fullscreen without max-width ?>
 .ui-autocomplete {
+	font-size: 90%;
+	font-weight: bold;
 	position: absolute;
 	cursor: default;
 }
@@ -245,7 +291,7 @@ input[type="radio"] {
 	max-width: 600px;
 }
 .ui-autocomplete {
-	background-color: white;
+	background-color: #333	;
 	border: 1px solid #ccc;
 	overflow: hidden;
 
@@ -260,12 +306,14 @@ input[type="radio"] {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
-.ui-autocomplete .ui-menu-item:hover {
-	background-color: #eee;
-}
-.ui-autocomplete a:hover {
+.ui-autocomplete .ui-menu-item:hover a {
 	text-decoration: none;
-	color: #4690D6;
+	color: white;
+	text-shadow: 0 0 6px white;
+}
+
+.ui-combobox {
+	height: 23px !important;
 }
 
 /* ***************************************
@@ -287,8 +335,8 @@ input[type="radio"] {
 
 	margin-top: 3px;
 	width: 208px;
-	background-color: white;
-	border: 1px solid #0054A7;
+	background-color: #eee;
+	border: 1px solid #333;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -306,65 +354,63 @@ input[type="radio"] {
 
 .ui-datepicker-header {
 	position: relative;
-	background: #4690D6;
-	color: white;
+	background: #333;
+	color: #eee;
 	padding: 2px 0;
-	border-bottom: 1px solid #0054A7;
 }
 .ui-datepicker-header a {
 	color: white;
 }
 .ui-datepicker-prev, .ui-datepicker-next {
-    position: absolute;
-    top: 5px;
+	position: absolute;
+	top: 5px;
 	cursor: pointer;
 }
 .ui-datepicker-prev {
-    left: 6px;
+	left: 6px;
 }
 .ui-datepicker-next {
-    right: 6px;
+	right: 6px;
 }
 .ui-datepicker-title {
-    line-height: 1.8em;
-    margin: 0 30px;
-    text-align: center;
+	line-height: 1.8em;
+	margin: 0 30px;
+	text-align: center;
 	font-weight: bold;
 }
 .ui-datepicker-calendar {
 	margin: 4px;
 }
 .ui-datepicker th {
-	color: #0054A7;
+	color: #ff4c12;
 	border: none;
-    font-weight: bold;
-    padding: 5px 6px;
-    text-align: center;
+	font-weight: bold;
+	padding: 5px 6px;
+	text-align: center;
 }
 .ui-datepicker td {
 	padding: 1px;
 }
 .ui-datepicker td span, .ui-datepicker td a {
-    display: block;
-    padding: 2px;
+	display: block;
+	padding: 2px;
 	line-height: 1.2em;
-    text-align: right;
-    text-decoration: none;
+	text-align: right;
+	text-decoration: none;
 }
 .ui-datepicker-calendar .ui-state-default {
-	border: 1px solid #ccc;
-    color: #4690D6;;
-	background: #fafafa;
+	border: 1px solid transparent;
+	color: #ff4c12;
+	background: none;
 }
 .ui-datepicker-calendar .ui-state-hover {
 	border: 1px solid #aaa;
-    color: #0054A7;
 	background: #eee;
 }
 .ui-datepicker-calendar .ui-state-active,
 .ui-datepicker-calendar .ui-state-active.ui-state-hover {
 	font-weight: bold;
-    border: 1px solid #0054A7;
-    color: #0054A7;
-	background: #E4ECF5;
+	border: 1px solid transparent;
+	color: #eee;
+	background: #333;
 }

@@ -16,7 +16,7 @@
 
 /* Info */
 .elgg-module-info > .elgg-head {
-	background: #e4e4e4;
+	background: #dedede;
 	padding: 5px;
 	margin-bottom: 10px;
 	
@@ -51,7 +51,7 @@
 	margin-bottom: 5px;
 }
 .elgg-module-popup > .elgg-head * {
-	color: #0054A7;
+	color: #d86c2c;
 }
 
 /* Dropdown */
@@ -81,7 +81,7 @@
 
 /* Featured */
 .elgg-module-featured {
-	border: 1px solid #4690D6;
+	border: 1px solid #ff4c12;
 	
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -89,7 +89,7 @@
 }
 .elgg-module-featured > .elgg-head {
 	padding: 5px;
-	background-color: #4690D6;
+	background-color: #ff4c12;
 }
 .elgg-module-featured > .elgg-head * {
 	color: white;
@@ -140,13 +140,14 @@
 }
 
 .elgg-module-widget {
-	background-color: #dedede;
 	padding: 2px;
 	margin: 0 5px 15px;
 	position: relative;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 }
-.elgg-module-widget:hover {
-	background-color: #ccc;
+.elgg-module-widget:hover > .elgg-head {
+	background-color: #f5f5f5;
 }
 .elgg-module-widget > .elgg-head {
 	background-color: #eeeeee;
@@ -158,19 +159,10 @@
 	padding: 4px 45px 0 20px;
 	color: #666;
 }
-.elgg-module-widget.elgg-state-draggable > .elgg-head {
+.elgg-module-widget.elgg-state-draggable .elgg-widget-handle {
 	cursor: move;
 }
-.elgg-module-widget > .elgg-head a {
-	position: absolute;
-	top: 4px;
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	padding: 2px 2px 0 0;
-}
 a.elgg-widget-collapse-button {
-	left: 5px;
 	color: #c5c5c5;
 }
 a.elgg-widget-collapse-button:hover,
@@ -184,14 +176,7 @@ a.elgg-widget-collapse-button:before {
 a.elgg-widget-collapsed:before {
 	content: "\25BA";
 }
-a.elgg-widget-delete-button {
-	right: 5px;
-}
-a.elgg-widget-edit-button {
-	right: 25px;
-}
 .elgg-module-widget > .elgg-body {
-	background-color: white;
 	width: 100%;
 	overflow: hidden;
 	border-top: 2px solid #dedede;
