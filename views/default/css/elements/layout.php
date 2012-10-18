@@ -81,18 +81,17 @@ body {
 .elgg-page-body .elgg-inner {
 	position: relative;	/* This fixes the IE7 overflow hidden bug */
 	clear: both;
-	float: left;
-	width: 100%;		/* width of whole page */
 	overflow: hidden;	/* This chops off any overhanging divs */
 	background-color: #dedede;
 }
 .elgg-layout {
-	right: 25%;
 	background-color: #eee;
 	float: left;
 	position: relative;
-	width: 100%;
 	min-height: 500px;
+}
+.elgg-layout-one-sidebar {
+	right: 25%;
 }
 .elgg-sidebar {
 	left: 31%;
@@ -107,10 +106,12 @@ body {
 	margin: 0 10px 0 0;
 }
 .elgg-main {
+	left: 2%;
+	width: 96%;
+}
+.elgg-layout-one-sidebar .elgg-main {
 	left: 27%;
 	width: 71%;
-	padding: 10px;
-	padding-left: 20px;
 }
 .elgg-main > .elgg-head {
 	padding-bottom: 3px;
