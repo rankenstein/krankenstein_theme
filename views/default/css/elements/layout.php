@@ -78,7 +78,7 @@ body {
 
 /***** LIQUID LAYOUT *******/
 
-.elgg-page-body {
+.elgg-page-body .elgg-inner {
 	position: relative;	/* This fixes the IE7 overflow hidden bug */
 	clear: both;
 	float: left;
