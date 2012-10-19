@@ -3,7 +3,8 @@
 	background-image: url('<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/n1.png');
 	background-repeat: no-repeat;
 	display: table;
-	margin: 30px 0 50px 0;
+	margin: 30px auto 50px;
+	min-width: 80%;
 }
 
 #n1-landing-inner {
@@ -14,8 +15,9 @@
 }
 
 #n1-landing-title {
-	font-size: 1.7em;
+	font-size: 2.1em;
 	font-weight: bold;
+	line-height: 0.9em;
 }
 
 #n1-landing-subtitle {
