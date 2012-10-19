@@ -3,7 +3,7 @@
 	background-image: url('<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/n1.png');
 	background-repeat: no-repeat;
 	display: table;
-	margin: 30px auto 50px;
+	margin: 30px 0 50px auto;
 	min-width: 80%;
 }
 
