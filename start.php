@@ -14,6 +14,12 @@ function n1_theme_init() {
 	elgg_extend_view('css/elgg', 'n1_theme/css');
 	elgg_extend_view('js/elgg', 'n1_theme/js');
 	elgg_extend_view('page/elements/title', 'n1_theme/header', 0);
+	// custom index widgets
+	foreach(array("custom_index", "edit_widgets", "index_2rbhh", "index_2rhhb", 
+		      "index",  "index_2rbms", "index_2rmsb",
+		      "index_1rsss", "index_2rbsm", "index_2rsmb") as $layout) {
+		elgg_extend_view('page/layouts/'.$layout, 'n1_theme/landing', 0);
+	}
 	
 	if (elgg_is_active_plugin('pages')) {
 		// pages icon url override
