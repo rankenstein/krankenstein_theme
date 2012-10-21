@@ -1,5 +1,7 @@
 <?php
 
+elgg_load_css('n1:landing_page');
+
 $title = elgg_echo('n1_theme:landing:title');
 $subtitle = elgg_echo('n1_theme:landing:subtitle');
 
