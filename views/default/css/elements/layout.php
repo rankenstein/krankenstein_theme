@@ -46,6 +46,8 @@ body {
 	position: relative;
 	height: 24px;
 	z-index: 9000;
+	position: fixed;
+	width: 100%;
 }
 .elgg-page-topbar > .elgg-inner {
 	padding: 0 10px;
@@ -70,6 +72,7 @@ body {
 .elgg-page-header {
 	position: relative;
 	background: #333333;
+	padding-top: 24px;
 }
 .elgg-page-header > .elgg-inner {
 	position: relative;
