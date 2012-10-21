@@ -27,7 +27,7 @@ Search plugin
 	width: 97%;
 	margin-top: 13px;
 	border: 0;
-	background: #EEE url(http://dev.n-1.cc/_graphics/elgg_sprites.png) no-repeat 99% -916px;
+	background: #EEE url(<?php echo elgg_get_site_url(); ?>_graphics/elgg_sprites.png) no-repeat 99% -916px;
 	font-size: 1em;
 	
 }
