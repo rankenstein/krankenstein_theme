@@ -8,13 +8,18 @@ function n1_theme_init() {
 	elgg_register_menu_item('topbar', $item);
 	elgg_register_plugin_hook_handler('register', 'menu:topbar', 'n1_theme_topbar_menu');
 	
-	elgg_register_plugin_hook_handler('index', 'system', 'n1_theme_front_page');
-	
 	elgg_register_simplecache_view('n1_theme/landing');
 	elgg_register_css('n1:landing_page', elgg_get_simplecache_url('css', 'n1_theme/landing'));
 	
 	elgg_extend_view('css/elgg', 'n1_theme/css');
 	elgg_extend_view('js/elgg', 'n1_theme/js');
+	elgg_extend_view('page/elements/title', 'n1_theme/header', 0);
+	// custom index widgets
+	foreach(array("custom_index", "edit_widgets", "index_2rbhh", "index_2rhhb", 
+		      "index",  "index_2rbms", "index_2rmsb",
+		      "index_1rsss", "index_2rbsm", "index_2rsmb") as $layout) {
+		elgg_extend_view('page/layouts/'.$layout, 'n1_theme/landing', 0);
+	}
 	
 	if (elgg_is_active_plugin('pages')) {
 		// pages icon url override
@@ -24,11 +29,6 @@ function n1_theme_init() {
 
 function n1_theme_topbar_menu($hook, $type, $returnvalue, $params){
 	//var_dump($returnvalue);exit();
-}
-
-function n1_theme_front_page($hook, $type, $returnvalue, $params) {
-	include(elgg_get_plugins_path() . 'n1_theme/index.php');
-	return true;
 }
 
 /**
