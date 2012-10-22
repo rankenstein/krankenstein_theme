@@ -12,7 +12,7 @@
 	ICONS
 *************************************** */
 
-.elgg-icon {
+.elgg-icon, .elgg-menu-item-logout a {
 	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/elgg_sprites.png) no-repeat left;
 	width: 16px;
 	height: 16px;
@@ -275,9 +275,11 @@
 .elgg-icon-video {
 	background-position: 0 -1512px;
 }
-.elgg-icon-logout {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/_graphics/usernavicons.png) no-repeat left;
-	background-position: 0 0;
+.elgg-icon-logout, .elgg-menu-item-logout a {
+	background-position: 0 -1525px;
+}
+.elgg-icon-logout:hover, .elgg-menu-item-logout:hover a {
+	background-position: 0 -1542px;
 }
 
 

@@ -161,13 +161,14 @@
 }
 
 .elgg-menu-topbar > li > a {
-	padding: 2px 15px 0;
-	color: #eee;
+	padding: 2px 7px 0;
 	margin-top: 1px;
+	font-size: 0px;
+	color: #333;
 }
 
 .elgg-menu-topbar > li > a:hover {
-	color: #ff4c12;
+	color: #333;
 	text-decoration: none;
 }
 
@@ -191,6 +192,13 @@
 	width: 18px;
 	height: 18px;
 }
+
+.elgg-menu-item-logout a {
+	margin-top: 2px;
+	margin-left: 8px;
+	padding-top: 1px;
+}
+
 
 /* ***************************************
 	SITE MENU
