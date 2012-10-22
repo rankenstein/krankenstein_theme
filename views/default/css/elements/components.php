@@ -25,7 +25,12 @@
 }
 
 .elgg-subtext {
-margin-top: 3px;
+	margin-top: 3px;
+}
+
+.elgg-subtext .elgg-tags {
+	font-size: 90%;
+	padding-top: 4px;	
 }
 
 /* ***************************************
