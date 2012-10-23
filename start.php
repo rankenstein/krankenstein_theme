@@ -28,7 +28,49 @@ function n1_theme_init() {
 }
 
 function n1_theme_topbar_menu($hook, $type, $returnvalue, $params){
-	//var_dump($returnvalue);exit();
+	$user = elgg_get_logged_in_user_entity();
+	
+	if (elgg_is_admin_logged_in()) {
+		$returnvalue[] = ElggMenuItem::factory(array(
+			'name' => 'administration',
+			'href' => "admin",
+			'text' => elgg_view_icon('settings'),
+			'title' => elgg_echo('admin'),
+			'priority' => 100,
+			'section' => 'alt',
+		));
+	}
+	
+	if (elgg_is_active_plugin('dashboard')) {
+		$returnvalue[] = ElggMenuItem::factory(array(
+			'name' => 'dashboard',
+			'href' => "dashboard",
+			'text' => elgg_view_icon('home'),
+			'title' => elgg_echo('dashboard'),
+			'priority' => 200,
+			'section' => 'alt',
+		));
+	}
+
+	$returnvalue[] = ElggMenuItem::factory(array(
+		'name' => 'usersettings',
+		'href' => "settings/user/{$user->username}",
+		'text' => elgg_view_icon('settings-alt'),
+		'title' => elgg_echo('settings'),
+		'priority' => 500,
+		'section' => 'alt',
+	));
+
+	$returnvalue[] = ElggMenuItem::factory(array(
+		'name' => 'logout',
+		'href' => "action/logout",
+		'text' => elgg_echo('logout'),
+		'title' => elgg_echo('logout'),
+		'is_action' => TRUE,
+		'priority' => 1000,
+		'section' => 'alt',
+	));
+	return $returnvalue;
 }
 
 /**
