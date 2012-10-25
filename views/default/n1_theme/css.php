@@ -120,3 +120,12 @@
 	background-color: #F7F7F7 !important;
 	border: none !important;
 }
+
+/* BeeChat */
+div#beechat_contacts_top {
+    background-color: #333333;
+}
+
+div.beechat_chatbox_top {
+    background-color: #333333;
+}
