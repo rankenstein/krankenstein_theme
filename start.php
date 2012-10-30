@@ -29,7 +29,17 @@ function n1_theme_init() {
 
 function n1_theme_topbar_menu($hook, $type, $returnvalue, $params){
 	$user = elgg_get_logged_in_user_entity();
-	
+
+	if (elgg_is_active_plugin('groups')) {
+		$returnvalue[] = ElggMenuItem::factory(array(
+			'name' => 'groups',
+			'href' => $user ? "groups/member/$user->username" : "groups/all",
+			'text' => elgg_view_icon('groups'),
+			'title' => elgg_echo('groups'),
+			'priority' => 500,
+		));
+	}
+
 	if (elgg_is_admin_logged_in()) {
 		$returnvalue[] = ElggMenuItem::factory(array(
 			'name' => 'administration',

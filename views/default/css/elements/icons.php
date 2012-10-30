@@ -281,6 +281,12 @@
 .elgg-icon-logout:hover, .elgg-menu-item-logout:hover a {
 	background-position: 0 -1542px;
 }
+.elgg-icon-groups {
+	background-position: 0 -1577px;
+}
+.elgg-icon-groups:hover {
+	background-position: 0 -1560px;
+}
 
 
 .elgg-avatar > .elgg-icon-hover-menu {
