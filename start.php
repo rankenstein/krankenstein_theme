@@ -31,10 +31,28 @@ function n1_theme_topbar_menu($hook, $type, $returnvalue, $params){
 	$user = elgg_get_logged_in_user_entity();
 
 	if (elgg_is_active_plugin('groups')) {
+
+		$ia = elgg_set_ignore_access(TRUE);
+		$num_invitations = elgg_get_entities_from_relationship(array(
+			'relationship' => 'invited',
+			'relationship_guid' => $user->guid,
+			'inverse_relationship' => TRUE,
+			'limit' => 0,
+			'count' => TRUE,
+		));
+		elgg_set_ignore_access($ia);
+
+		if ($num_invitations) {
+			$num_invitations = elgg_view('output/url', array(
+				'text' => "<span class=\"messages-new\">$num_invitations</span>",
+				'href' => "groups/invitations/$user->username",
+			));
+		}
+
 		$returnvalue[] = ElggMenuItem::factory(array(
 			'name' => 'groups',
-			'href' => $user ? "groups/member/$user->username" : "groups/all",
-			'text' => elgg_view_icon('groups'),
+			'href' => "groups/member/$user->username",
+			'text' => elgg_view_icon('groups') . $num_invitations,
 			'title' => elgg_echo('groups'),
 			'priority' => 500,
 		));
