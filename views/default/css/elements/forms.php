@@ -291,27 +291,24 @@ input[type="radio"] {
 	max-width: 600px;
 }
 .ui-autocomplete {
-	background-color: #333	;
+	background-color: #f7f7f7;
 	border: 1px solid #ccc;
 	overflow: hidden;
-
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 }
 .ui-autocomplete .ui-menu-item {
 	padding: 0px 4px;
-	
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	font-weight: normal;
+}
+.ui-autocomplete .ui-menu-item:hover {
+	background-color: #eee;
+	cursor: pointer;
 }
 .ui-autocomplete .ui-menu-item:hover a {
-	text-decoration: none;
-	color: white;
-	text-shadow: 0 0 6px white;
+	color: #FF4C12;
+	background: none;
+	border: none;
+	border-radius: 0;
 }
-
 .ui-combobox {
 	height: 23px !important;
 }
