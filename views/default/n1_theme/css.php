@@ -104,10 +104,19 @@
 	margin: 10px;
 }
 
+#cboxTitle, #cboxTitle h3, #cboxCurrent {
+	color: #000;
+}
 #cboxTitle h3 {
-	color: #eee;	
 	font-weight: bold;
 	font-size: 160%;
+}
+#cboxOverlay {
+	background-color: #FFF;
+	opacity: 0.6 !important;
+}
+.event-calendar-lightbox {
+	padding: 5px;
 }
 
 .groups-profile-icon {
