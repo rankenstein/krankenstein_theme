@@ -26,6 +26,21 @@
 	font-weight: bold;
 }
 
+.messages-new {
+	background-color: #FF4C12;
+	border-radius: 10px;
+	box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+	color: black;
+	font-size: 10px;
+	font-weight: bold;
+	height: 16px;
+	left: 20px;
+	min-width: 16px;
+	position: absolute;
+	text-align: center;
+	top: 12px;
+}
+
 .elgg-access, .elgg-input-access > option {
 	padding-left: 19px;
 	background-image: url('<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/privacy.png');
@@ -89,10 +104,19 @@
 	margin: 10px;
 }
 
+#cboxTitle, #cboxTitle h3, #cboxCurrent {
+	color: #000;
+}
 #cboxTitle h3 {
-	color: #eee;	
 	font-weight: bold;
 	font-size: 160%;
+}
+#cboxOverlay {
+	background-color: #FFF;
+	opacity: 0.6 !important;
+}
+.event-calendar-lightbox {
+	padding: 5px;
 }
 
 .groups-profile-icon {
@@ -104,4 +128,13 @@
 .elgg-page .cke_skin_BootstrapCK-Skin .cke_contents, .cke_skin_BootstrapCK-Skin .cke_contents iframe {
 	background-color: #F7F7F7 !important;
 	border: none !important;
+}
+
+/* BeeChat */
+div#beechat_contacts_top {
+    background-color: #333333;
+}
+
+div.beechat_chatbox_top {
+    background-color: #333333;
 }
