@@ -43,7 +43,7 @@
 
 .elgg-access, .elgg-input-access > option {
 	padding-left: 19px;
-	background-image: url('<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/privacy.png');
+	background-image: url('<?php echo elgg_get_site_url(); ?>mod/cic_theme/_graphics/privacy.png');
 	background-repeat: no-repeat;
 }
 

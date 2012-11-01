@@ -14,20 +14,20 @@
 	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: 400;
-	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Regular.ttf");
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/cic_theme/vendors/opensans/OpenSans-Regular.ttf");
 }
 
 @font-face {
 	font-family: "Open Sans";
 	font-style: bold;
-	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Semibold.ttf");
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/cic_theme/vendors/opensans/OpenSans-Semibold.ttf");
 	font-weight: 600;
 }
 
 @font-face {
 	font-family: "Open Sans";
 	font-style: italic;
-	src: url("<?php echo elgg_get_site_url(); ?>/mod/n1_theme/vendors/opensans/OpenSans-Italic.ttf");
+	src: url("<?php echo elgg_get_site_url(); ?>/mod/cic_theme/vendors/opensans/OpenSans-Italic.ttf");
 	font-weight: 400;
 }
 
@@ -93,7 +93,7 @@ blockquote {
 	line-height: 1.3em;
 	padding:10px 20px 10px 10px;
 	margin:5px 5px 15px 20px;
-	background: #E6D37E url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/quotes.png) no-repeat right;
+	background: #E6D37E url(<?php echo elgg_get_site_url(); ?>mod/cic_theme/_graphics/quotes.png) no-repeat right;
 	border:none;
 	box-shadow: 0px 1px 3px #666;
 	

@@ -76,7 +76,7 @@ body {
 }
 .elgg-page-header > .elgg-inner {
 	position: relative;
-	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/n1_small.png) no-repeat 650px bottom;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/cic_theme/_graphics/cic_small.png) no-repeat 650px bottom;
 }
 
 /***** LIQUID LAYOUT *******/
