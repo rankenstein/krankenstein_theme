@@ -59,7 +59,7 @@
 	margin-bottom: 5px;
 }
 .elgg-module-popup > .elgg-head * {
-	color: #d86c2c;
+	color: #4d9b00;
 }
 
 /* Dropdown */

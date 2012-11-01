@@ -40,7 +40,7 @@ body {
 }
 
 a {
-	color: #ff4c12;
+	color: #4d9b00;
 }
 
 a:hover,

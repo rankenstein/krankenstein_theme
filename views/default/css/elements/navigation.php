@@ -139,7 +139,7 @@
 	color: #999;
 }
 .elgg-breadcrumbs > li > a:hover {
-	color: #FF4C12;
+	color: #4d9b00;
 	text-decoration: underline;
 }
 
@@ -230,7 +230,7 @@
 }
 
 .elgg-menu-site-default > li > a {
-	color: #ed9239;
+	color: #b3ff42;
 }
 
 .elgg-menu-site > li > ul {
@@ -267,7 +267,7 @@
 
 .elgg-menu-site-more > li > a {
 	background-color: #333;
-	color: #ed9239;
+	color: #b3ff42;
 
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
@@ -344,7 +344,7 @@
 	border-radius: 5px 5px 0 0;
 }
 .elgg-menu-filter > li > a:hover {
-	color: #ff4c12;
+	color: #4d9b00;
 }
 .elgg-menu-filter > .elgg-state-selected {
 	border-color: #999;
