@@ -40,7 +40,7 @@ body {
 }
 
 a {
-	color: #ff4c12;
+	color: #56A00E;
 }
 
 a:hover,
@@ -156,7 +156,7 @@ h6 { font-size: 0.8em; }
 }
 
 .elgg-loud {
-	color: #d86c2c;
+	color: #56A00E;
 }
 
 /* ***************************************

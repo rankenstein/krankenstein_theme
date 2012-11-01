@@ -230,7 +230,7 @@
 }
 
 .elgg-menu-site-default > li > a {
-	color: #ed9239;
+	color: #B3FF42;
 }
 
 .elgg-menu-site > li > ul {
@@ -267,7 +267,7 @@
 
 .elgg-menu-site-more > li > a {
 	background-color: #333;
-	color: #ed9239;
+	color: #B3FF42;
 
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
