@@ -282,6 +282,15 @@
 	background-position: 0 -1542px;
 }
 
+.elgg-icon-group, .elgg-menu-item-group a {
+	background-position: 0 -1560px;
+}
+
+.elgg-icon-group:hover, .elgg-menu-item-group:hover a {
+	background-position: 0 -1578px;
+}
+
+
 
 .elgg-avatar > .elgg-icon-hover-menu {
 	display: none;
