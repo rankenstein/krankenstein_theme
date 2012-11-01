@@ -59,7 +59,7 @@
 	margin-bottom: 5px;
 }
 .elgg-module-popup > .elgg-head * {
-	color: #56A00E;
+	color: #d86c2c;
 }
 
 /* Dropdown */
@@ -89,15 +89,15 @@
 
 /* Featured */
 .elgg-module-featured {
-	border: 1px solid #56A00E;
+	border: 1px solid #333;
 	
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .elgg-module-featured > .elgg-head {
 	padding: 5px;
-	background-color: #56A00E;
+	background-color: #333;
 }
 .elgg-module-featured > .elgg-head * {
 	color: white;

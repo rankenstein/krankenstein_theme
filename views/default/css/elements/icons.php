@@ -13,7 +13,7 @@
 *************************************** */
 
 .elgg-icon, .elgg-menu-item-logout a {
-	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/cic_theme/_graphics/elgg_sprites.png) no-repeat left;
+	background: transparent url(<?php echo elgg_get_site_url(); ?>mod/n1_theme/_graphics/elgg_sprites.png) no-repeat left;
 	width: 16px;
 	height: 16px;
 	margin: 0 2px;
@@ -281,6 +281,12 @@
 .elgg-icon-logout:hover, .elgg-menu-item-logout:hover a {
 	background-position: 0 -1542px;
 }
+.elgg-icon-groups {
+	background-position: 0 -1577px;
+}
+.elgg-icon-groups:hover {
+	background-position: 0 -1560px;
+}
 
 .elgg-icon-group, .elgg-menu-item-group a {
 	background-position: 0 -1560px;
@@ -289,6 +295,8 @@
 .elgg-icon-group:hover, .elgg-menu-item-group:hover a {
 	background-position: 0 -1578px;
 }
+
+
 
 .elgg-avatar > .elgg-icon-hover-menu {
 	display: none;
