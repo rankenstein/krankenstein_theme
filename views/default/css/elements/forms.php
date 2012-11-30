@@ -90,6 +90,9 @@ input[type=file] {
 	background: none;
 }
 
+input[type=image] {
+	width: auto;
+}
 
 textarea {
 	height: 200px;
