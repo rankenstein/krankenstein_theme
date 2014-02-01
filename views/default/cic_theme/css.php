@@ -210,7 +210,8 @@ h1, h2, h3, h4, h5, h6 {
 .elgg-module-widget,
 .elgg-module-group,
 #profile-details,
-.groups-profile-fields
+.groups-profile-fields,
+.elgg-sidebar
 {
 	background-color: #fff;
 	border-radius: 5px;
@@ -226,6 +227,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .groups-profile-fields {
 	padding: 5px;
+}
+
+.elgg-sidebar {
+	background-color:#e7e7e7;
+	padding: 10px;
+	margin-top: 10px;
+	width: 20%;
 }
 
 .elgg-module-widget > .elgg-head,
