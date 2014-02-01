@@ -1,3 +1,7 @@
+img {
+	vertical-align: middle;
+}
+
 .profile-content-menu a {
 	background-color: transparent;
 }
@@ -119,10 +123,28 @@
 	padding: 5px;
 }
 
+.elgg-image img {
+	box-shadow: 0 0 1px #666;
+	border-radius: 2px;
+}
+
 .groups-profile-icon {
-	height: 201px;
-	border: 2px solid #F1F1F1;
-	box-shadow: 0px 1px 3px #666;
+}
+
+.groups-profile-icon img {
+	border-radius:4px;
+	box-shadow: 0 0 10px #666;
+	padding: 3px;
+	margin-left:5px;
+}
+
+.widget_group_news_container .elgg-image {
+	box-shadow: 0 0 2px #666;
+	border-radius: 3px;
+}
+
+.widget_group_news_container .elgg-image img {
+	border-radius: 3px;
 }
 
 .elgg-page .cke_skin_BootstrapCK-Skin .cke_contents, .cke_skin_BootstrapCK-Skin .cke_contents iframe {
