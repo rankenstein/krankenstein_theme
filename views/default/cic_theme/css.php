@@ -314,17 +314,20 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom:4px;
 }
 
-.elgg-menu-filter > .elgg-state-selected {
+.elgg-menu-filter > li {
 	border: none;
-	background: #333;
-	color: #eee;
-	border-radius: 3px;
+	background: transparent;
+	position: static;
 }
 
 .elgg-menu-filter > li > a {
-	color: inherit;
-	position: static;
 	line-height: 21px;
+	border-radius: 3px;
+}
+
+.elgg-menu-filter > .elgg-state-selected a,.elgg-menu-filter > li a:hover {
+	background: #333;
+	color: #eee;
 }
 
 
