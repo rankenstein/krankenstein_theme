@@ -10,7 +10,6 @@ function cic_theme_init() {
 	
 	elgg_extend_view('css/elgg', 'cic_theme/css');
 	//elgg_extend_view('js/elgg', 'cic_theme/js');
-	//elgg_extend_view('page/elements/title', 'cic_theme/header', 0);
 	
 	/*if (elgg_is_active_plugin('pages')) {
 		// pages icon url override
