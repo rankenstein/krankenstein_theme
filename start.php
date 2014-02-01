@@ -10,11 +10,6 @@ function cic_theme_init() {
 	
 	elgg_extend_view('css/elgg', 'cic_theme/css');
 	//elgg_extend_view('js/elgg', 'cic_theme/js');
-	
-	/*if (elgg_is_active_plugin('pages')) {
-		// pages icon url override
-		elgg_register_plugin_hook_handler('entity:icon:url', 'object', 'cic_theme_pages_icon_url_override');
-	}*/
 }
 
 function cic_theme_topbar_menu($hook, $type, $returnvalue, $params){
@@ -89,34 +84,4 @@ function cic_theme_topbar_menu($hook, $type, $returnvalue, $params){
 		'section' => 'alt',
 	));
 	return $returnvalue;
-}
-
-/**
- * Override the default entity icon for pages and pads
- *
- * @return string Relative URL
- */
-function cic_theme_pages_icon_url_override($hook, $type, $returnvalue, $params) {
-	$entity = $params['entity'];
-	if (elgg_instanceof($entity, 'object', 'page_top') ||
-		elgg_instanceof($entity, 'object', 'page')) {
-		$icon = 'pages';
-	} elseif (elgg_instanceof($entity, 'object', 'etherpad') ||
-			  elgg_instanceof($entity, 'object', 'subpad')) {
-		$icon = 'pad';
-	} else {
-		return $returnvalue;
-	}
-	switch ($params['size']) {
-		case 'topbar':
-		case 'tiny':
-			return "mod/cic_theme/_graphics/icons/{$icon}_tiny.gif";
-			break;
-		case 'small':
-			return "mod/cic_theme/_graphics/icons/{$icon}_small.gif";
-			break;
-		default:
-			return "mod/cic_theme/_graphics/icons/{$icon}_lrg.gif";
-			break;
-	}
 }
