@@ -131,11 +131,17 @@ img {
 .groups-profile-icon {
 }
 
-.groups-profile-icon img {
+.elgg-avatar {
+	border: none;
+	box-shadow: none;
+}
+
+.groups-profile-icon img, .elgg-avatar-large > a > img {
 	border-radius:4px;
 	box-shadow: 0 0 10px #666;
 	padding: 3px;
-	margin-left:5px;
+	width: auto;
+	height: auto;
 }
 
 .widget_group_news_container .elgg-image {
@@ -148,12 +154,19 @@ img {
 }
 
 
-.elgg-module-widget {
+.elgg-module-widget,#profile-details {
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 0 10px #bbb;
-	padding: 0;
 	border:1px solid #bbb;
+}
+
+#profile-details {
+	margin-right:5px;
+}
+
+.elgg-module-widget {
+	padding: 0;
 }
 
 .elgg-module-widget > .elgg-head,.elgg-module-widget:hover > .elgg-head {
@@ -172,6 +185,26 @@ img {
 
 .elgg-module-widget > .elgg-head .elgg-menu-item-collapse {
 	line-height: 16px;
+}
+
+
+#profile-details .odd,#profile-details .even,.profile-aboutme-title {
+	background: transparent;
+}
+
+.profile-aboutme-title {
+	font-size: 1.2em;
+	margin:1em 0 .5em 0;
+}
+
+
+.elgg-main {
+	overflow: visible;
+}
+
+.elgg-page-body .elgg-inner {
+	background: transparent;
+	overflow: visible;
 }
 
 
