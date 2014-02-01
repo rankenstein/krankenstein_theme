@@ -123,12 +123,64 @@ img {
 	padding: 5px;
 }
 
-.elgg-image img {
-	box-shadow: 0 0 1px #666;
+
+
+
+
+
+
+
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
+a {
+	color: #4d9b00;
+}
+
+pre, code, .elgg-monospace {
+	font-family: monospace;
+	font-size: inherit;
+	background: transparent;
+}
+
+blockquote {
+	
+	line-height: 1.3em;
+	padding:10px 20px 10px 10px;
+	margin:5px 5px 15px 20px;
+	background: #E6D37E url(<?php echo elgg_get_site_url(); ?>mod/cic_theme/_graphics/quotes.png) no-repeat right;
+	border:none;
+	box-shadow: 0px 1px 3px #666;
+	
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
 
-.groups-profile-icon {
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+
+.elgg-heading-site {
+	display: none;
+}
+
+.elgg-heading-basic {
+	color: #616068;
+}
+
+.elgg-loud {
+	color: #d86c2c;
+}
+
+
+
+
+.elgg-image img {
+	border-radius: 2px;
 }
 
 .elgg-avatar {
@@ -252,6 +304,21 @@ img {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .elgg-page .cke_skin_BootstrapCK-Skin .cke_contents, .cke_skin_BootstrapCK-Skin .cke_contents iframe {
 	background-color: #F7F7F7 !important;
 	border: none !important;
@@ -265,3 +332,4 @@ div#beechat_contacts_top {
 div.beechat_chatbox_top {
     background-color: #333333;
 }
+
