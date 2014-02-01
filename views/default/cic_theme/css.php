@@ -147,6 +147,34 @@ img {
 	border-radius: 3px;
 }
 
+
+.elgg-module-widget {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #bbb;
+	padding: 0;
+	border:1px solid #bbb;
+}
+
+.elgg-module-widget > .elgg-head,.elgg-module-widget:hover > .elgg-head {
+	line-height: 20px;
+	/*background-color: #333;*/
+	background-color: #f8f8f8;
+}
+
+.elgg-module-widget > .elgg-head h3,
+.elgg-module-widget:hover > .elgg-head h3,
+/*.elgg-module-widget > .elgg-head .elgg-widget-collapse-button,*/
+.elgg-module-widget > .elgg-head h3 a,
+.elgg-module-widget > .elgg-head h3 a:hover {
+	color: #6c6c6c;
+}
+
+.elgg-module-widget > .elgg-head .elgg-menu-item-collapse {
+	line-height: 16px;
+}
+
+
 .elgg-page .cke_skin_BootstrapCK-Skin .cke_contents, .cke_skin_BootstrapCK-Skin .cke_contents iframe {
 	background-color: #F7F7F7 !important;
 	border: none !important;
