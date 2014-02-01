@@ -177,8 +177,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
 .elgg-image img {
 	border-radius: 2px;
 }
@@ -311,6 +309,23 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: visible;
 }
 
+
+.elgg-menu {
+	padding-bottom:4px;
+}
+
+.elgg-menu-filter > .elgg-state-selected {
+	border: none;
+	background: #333;
+	color: #eee;
+	border-radius: 3px;
+}
+
+.elgg-menu-filter > li > a {
+	color: inherit;
+	position: static;
+	line-height: 21px;
+}
 
 
 
