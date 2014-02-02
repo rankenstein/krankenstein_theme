@@ -123,6 +123,10 @@ img {
 	padding: 5px;
 }
 
+input[type=text], input[type=password], textarea {
+	background-color: #fff;
+}
+
 
 
 
