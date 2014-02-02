@@ -224,7 +224,8 @@ h1, h2, h3, h4, h5, h6 {
 .elgg-content > .elgg-image-block + .bookmark,
 .elgg-main > .elgg-image-block,
 .elgg-main > .elgg-image-block + .elgg-output,
-.elgg-main > .elgg-image-block + pre.pgparmor /* Messages messed up by PGP plugin */
+.elgg-main > .elgg-image-block + pre.pgparmor, /* Messages messed up by PGP plugin */
+.list-proposal > li
 {
 	background-color: #fff;
 	border-radius: 5px;
@@ -251,7 +252,8 @@ h1, h2, h3, h4, h5, h6 {
 .elgg-comments > .elgg-list > li,
 #group-replies > form,
 .elgg-comments > form,
-#messages-reply-form
+#messages-reply-form,
+.list-proposal > li
 {
 	padding: 5px;
 }
@@ -319,6 +321,15 @@ h1, h2, h3, h4, h5, h6 {
 {
 	border-top: 2px solid #dedede;
 	padding: 8px;
+}
+
+ul.list-proposal.elgg-list {
+	margin: 0;
+	border: none;
+}
+
+.list-proposal > li.elgg-item {
+	margin: 10px 0;
 }
 
 .elgg-module-widget > .elgg-head h3,
@@ -437,6 +448,10 @@ h1, h2, h3, h4, h5, h6 {
 pre.pgparmor {
 	float: none;
 }
+
+/*.elgg-page-header > .elgg-inner {
+	background-image: url(<?php echo elgg_get_site_url(); ?>mod/cic_theme/_graphics/pirate.svg);
+}*/
 
 
 
