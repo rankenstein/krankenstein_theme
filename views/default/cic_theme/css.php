@@ -213,12 +213,18 @@ h1, h2, h3, h4, h5, h6 {
 #group-replies > .elgg-list > li,
 .elgg-comments > .elgg-list > li,
 #group-replies > form,
-.elgg-comments > form
+.elgg-comments > form,
+#messages-reply-form,
+.elgg-content > .elgg-image-block,
+.elgg-content > .elgg-image-block + .elgg-output,
+.elgg-main > .elgg-image-block,
+.elgg-main > .elgg-image-block + .elgg-output,
+.elgg-main > .elgg-image-block + pre.pgparmor /* Messages messed up by PGP plugin */
 {
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 0 10px #bbb;
-	border:1px solid #bbb;
+	border: 1px solid #bbb;
 }
 
 .elgg-module-widget,
@@ -231,9 +237,43 @@ h1, h2, h3, h4, h5, h6 {
 #group-replies > .elgg-list > li,
 .elgg-comments > .elgg-list > li,
 #group-replies > form,
-.elgg-comments > form
+.elgg-comments > form,
+#messages-reply-form
 {
 	padding: 5px;
+}
+
+.elgg-content > .elgg-image-block,
+.elgg-main > .elgg-image-block
+{
+	border-bottom: none;
+	padding: 5px 5px 0 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/* Cover top box shadow of next element */
+.elgg-content > .elgg-image-block:after,
+.elgg-main > .elgg-image-block:after
+{
+	background-color: #fff;
+	height: 10px;
+	visibility: visible;
+	margin: 0 -5px 0 -5px;
+	z-index: 1;
+	position: relative;
+	color: #fff;
+}
+
+.elgg-content > .elgg-image-block + .elgg-output,
+.elgg-main > .elgg-image-block + .elgg-output,
+.elgg-main > .elgg-image-block + pre.pgparmor /* Messages messed up by PGP plugin */
+{
+	border-top: none;
+	padding: 0 5px 5px 5px;
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
 
 .elgg-sidebar {
@@ -340,12 +380,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-#group-replies > h3,
-.elgg-comments > h3
-{
-	display: none;
-}
-
 #group-replies > .elgg-list > li,
 .elgg-comments > .elgg-list > li
 {
@@ -353,7 +387,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #group-replies > form > fieldset > div > label,
-.elgg-comments > form > fieldset > div > label
+.elgg-comments > form > fieldset > div > label,
+.elgg-comments > form > fieldset > b > b > div > label /* Assemblies */
 {
 	font-weight: bold;
 	font-size: 1.2em;
@@ -363,7 +398,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #group-replies > form > fieldset > div > .mce-container,
-.elgg-comments > form > fieldset > div > .mce-container
+.elgg-comments > form > fieldset > div > .mce-container,
+.elgg-comments > form > fieldset > b > b > div > .mce-container /* Assemblies */
 {
 	clear: left;
 }
@@ -376,6 +412,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .elgg-sidebar {
 	left:28%;
+}
+
+
+pre.pgparmor {
+	float: none;
 }
 
 
