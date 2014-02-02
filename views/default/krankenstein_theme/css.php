@@ -458,6 +458,13 @@ pre.pgparmor {
 	padding: 0;
 }
 
+.elgg-output table th {
+	border: 1px solid #ccc;
+	padding: 3px 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
 
 
 
