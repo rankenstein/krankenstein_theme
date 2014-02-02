@@ -227,6 +227,14 @@ h1, h2, h3, h4, h5, h6 {
 	border: 1px solid #bbb;
 }
 
+/* Do not apply box on group profile */
+.elgg-main > .elgg-image-block.groups-profile {
+	background: transparent;
+	border-radius: none;
+	box-shadow: none;
+	border: none;
+}
+
 .elgg-module-widget,
 .elgg-module-group
 {
@@ -263,6 +271,11 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 1;
 	position: relative;
 	color: #fff;
+}
+
+/* Revert for group profile */
+.elgg-main > .elgg-image-block.groups-profile:after {
+	height: 0;
 }
 
 .elgg-content > .elgg-image-block + .elgg-output,
