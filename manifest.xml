@@ -5,10 +5,10 @@
 	<version>1.8.0</version>
 	<category>theme</category>
 	<description>
-		K.rankenste.in theme based on cic-theme
+		K.rankenste.in theme based on cic_theme
 	</description>
-	<website>https://github.com/lorea/cic_theme</website>
-	<copyright>(C) 2011-2013 Lorea</copyright>
+	<website>https://github.com/K-rankenste-in/krankenstein_theme</website>
+	<copyright>(C) 2011-2014 Lorea, K.rankenste.in</copyright>
 	<license>GNU Affero General Public License version 3 or higher</license>
 	
 	<requires>
