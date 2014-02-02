@@ -221,6 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 #messages-reply-form,
 .elgg-content > .elgg-image-block,
 .elgg-content > .elgg-image-block + .elgg-output,
+.elgg-content > .elgg-image-block + .bookmark,
 .elgg-main > .elgg-image-block,
 .elgg-main > .elgg-image-block + .elgg-output,
 .elgg-main > .elgg-image-block + pre.pgparmor /* Messages messed up by PGP plugin */
@@ -283,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .elgg-content > .elgg-image-block + .elgg-output,
+.elgg-content > .elgg-image-block + .bookmark,
 .elgg-main > .elgg-image-block + .elgg-output,
 .elgg-main > .elgg-image-block + pre.pgparmor /* Messages messed up by PGP plugin */
 {
