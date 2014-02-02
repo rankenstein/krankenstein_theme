@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 20px;
 	background: #f8f8f8;
 	border: none;
-	border-radius: 0;
+	border-radius: 5px 5px 0 0;
 	width: auto;
 	margin: 0;
 	filter: none;
