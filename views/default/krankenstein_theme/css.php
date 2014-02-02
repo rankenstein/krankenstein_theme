@@ -454,6 +454,10 @@ pre.pgparmor {
 	background-position: 650px top;
 }
 
+#widget_manager_widgets_select .widget_manager_widgets_lightbox_actions {
+	padding: 0;
+}
+
 
 
 
