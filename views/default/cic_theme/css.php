@@ -209,7 +209,11 @@ h1, h2, h3, h4, h5, h6 {
 .elgg-module-group,
 #profile-details,
 .groups-profile-fields,
-.elgg-sidebar
+.elgg-sidebar,
+#group-replies > .elgg-list > li,
+.elgg-comments > .elgg-list > li,
+#group-replies > form,
+.elgg-comments > form
 {
 	background-color: #fff;
 	border-radius: 5px;
@@ -223,7 +227,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 }
 
-.groups-profile-fields {
+.groups-profile-fields,
+#group-replies > .elgg-list > li,
+.elgg-comments > .elgg-list > li,
+#group-replies > form,
+.elgg-comments > form
+{
 	padding: 5px;
 }
 
@@ -331,14 +340,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+#group-replies > h3,
+.elgg-comments > h3
+{
+	display: none;
+}
 
+#group-replies > .elgg-list > li,
+.elgg-comments > .elgg-list > li
+{
+	margin-bottom: 10px;
+}
 
+#group-replies > form > fieldset > div > label,
+.elgg-comments > form > fieldset > div > label
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: .5em 0 .5em 5px;
+	display: block;
+	float: left;
+}
 
-
-
-
-
-
+#group-replies > form > fieldset > div > .mce-container,
+.elgg-comments > form > fieldset > div > .mce-container
+{
+	clear: left;
+}
 
 
 .elgg-layout-one-sidebar .elgg-main {
@@ -349,6 +377,12 @@ h1, h2, h3, h4, h5, h6 {
 .elgg-sidebar {
 	left:28%;
 }
+
+
+
+
+
+
 
 
 
