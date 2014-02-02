@@ -1,18 +1,18 @@
 <?php
 
-elgg_register_event_handler('init', 'system', 'cic_theme_init');
+elgg_register_event_handler('init', 'system', 'krankenstein_theme_init');
 
-function cic_theme_init() {
+function krankenstein_theme_init() {
 	elgg_unregister_menu_item('topbar','elgg_logo');
 	/*$item =  new ElggMenuItem('site_logo', elgg_get_site_entity()->name, elgg_get_site_url());
 	elgg_register_menu_item('topbar', $item);*/
-	elgg_register_plugin_hook_handler('register', 'menu:topbar', 'cic_theme_topbar_menu');
+	elgg_register_plugin_hook_handler('register', 'menu:topbar', 'krankenstein_theme_topbar_menu');
 	
-	elgg_extend_view('css/elgg', 'cic_theme/css');
-	//elgg_extend_view('js/elgg', 'cic_theme/js');
+	elgg_extend_view('css/elgg', 'krankenstein_theme/css');
+	//elgg_extend_view('js/elgg', 'krankenstein_theme/js');
 }
 
-function cic_theme_topbar_menu($hook, $type, $returnvalue, $params){
+function krankenstein_theme_topbar_menu($hook, $type, $returnvalue, $params){
 	$user = elgg_get_logged_in_user_entity();
 
 	if (elgg_is_active_plugin('groups')) {

@@ -47,7 +47,7 @@ img {
 
 .elgg-access, .elgg-input-access > option {
 	padding-left: 19px;
-	background-image: url('<?php echo elgg_get_site_url(); ?>mod/cic_theme/_graphics/privacy.png');
+	background-image: url('<?php echo elgg_get_site_url(); ?>mod/krankenstein_theme/_graphics/privacy.png');
 	background-repeat: no-repeat;
 }
 
@@ -154,7 +154,7 @@ blockquote {
 	line-height: 1.3em;
 	padding:10px 20px 10px 10px;
 	margin:5px 5px 15px 20px;
-	background: #E6D37E url(<?php echo elgg_get_site_url(); ?>mod/cic_theme/_graphics/quotes.png) no-repeat right;
+	background: #E6D37E url(<?php echo elgg_get_site_url(); ?>mod/krankenstein_theme/_graphics/quotes.png) no-repeat right;
 	border:none;
 	box-shadow: 0px 1px 3px #666;
 	
@@ -449,9 +449,10 @@ pre.pgparmor {
 	float: none;
 }
 
-/*.elgg-page-header > .elgg-inner {
-	background-image: url(<?php echo elgg_get_site_url(); ?>mod/cic_theme/_graphics/pirate.svg);
-}*/
+.elgg-page-header > .elgg-inner {
+	background-image: url(<?php echo elgg_get_site_url(); ?>mod/krankenstein_theme/_graphics/pirate.svg);
+	background-position: 650px top;
+}
 
 
 
