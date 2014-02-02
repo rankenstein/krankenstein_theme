@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 3px;
 }
 
-.elgg-menu-filter > .elgg-state-selected a,.elgg-menu-filter > li a:hover {
+.elgg-menu-filter > .elgg-state-selected a,.elgg-menu-filter > li a:hover,.elgg-menu-owner-block li.elgg-state-selected > a {
 	background: #333;
 	color: #eee;
 }
